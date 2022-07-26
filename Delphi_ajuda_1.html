@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>Códigos para Delphi</TITLE>
+<TITLE>Cï¿½digos para Delphi</TITLE>
 <style type="text/css">
 <!--
 body,td,th {
@@ -28,18 +28,18 @@ i{
 </HEAD>
 <BODY>
   <p><a href="#instala"> Instalando Componente </a></p>
-  <p><a href="#config"> Configurações no Delphi </a></p>
+  <p><a href="#config"> Configuraï¿½ï¿½es no Delphi </a></p>
   <p><a href="#arqtexto"> Arquivo de Texto </a></p>
 
-<h1> Evitar que a aplicação trave </h1>
+<h1> Evitar que a aplicacoes trave </h1>
 <p><i>trave, travamento, erro </i> </p>
 <p>Exemplo <br>
 Table1.First; <br>
 while not (Table1.Eof) do<br>
  begin 
    lbStatus.Caption := 'Processando registro...'; <i> // exibimos mensagem </i><br>
-   Application.ProcessMessages; <i>// chamados o método que força o SO a desenha janela </i><br>
-   Table1.Next; <i> // pula para o próximo registro da tabela end; </i><br>
+   Application.ProcessMessages; <i>// chamados o mï¿½todo que forï¿½a o SO a desenha janela </i><br>
+   Table1.Next; <i> // pula para o prï¿½ximo registro da tabela end; </i><br>
 </p>
 
 
@@ -60,15 +60,15 @@ Para parar 10 segundos use : SLEEP(10000);</p>
 const<br>
   MyArray: TArray<String> = ['First','Second','Third'];
 </p>
-<p> vetor: array  [0..2] of string = (´A´,´B´,´C´); </p>
+<p> vetor: array  [0..2] of string = (ï¿½Aï¿½,ï¿½Bï¿½,ï¿½Cï¿½); </p>
 
-<p>Codigo do botão para salvar:<br />
+<p>Codigo do botï¿½o para salvar:<br />
   if (DM.tbLink.State in [dsEdit, dsInsert]) then	<br />
       DM.tbLink.Post;	</p>
 
 <h1>Encriptar</h1>
 <p>c := GetSha1(d);<br />
-<em>Os dados vão em letras maiúsculas</em></p>
+<em>Os dados vï¿½o em letras maiï¿½sculas</em></p>
 
 <p>Encriptar usando SHA1 pois tem compatibilidade com o php</p>
 
@@ -89,16 +89,16 @@ end;
 
 <p><strong>Executar uma .DLL</strong></p>
 No onCreate do programa: <br />
-<em>Para o programa ler a dll que está na pasta</em><br />
+<em>Para o programa ler a dll que estï¿½ na pasta</em><br />
 vs := ExtractFilePath(ParamStr (0));<br />
 WinExec(PAnsiChar('Command.com /c SET PATH= ' + vs),0);</p>
  
 <h1>Timer</h1>
-<p>1 segundo é igual a 1000 milésimos<br />
+<p>1 segundo ï¿½ igual a 1000 milï¿½simos<br />
 1000 x 60 = 60000 <br />
-1 minuto é igual a 60000 milésimos! <br />
+1 minuto ï¿½ igual a 60000 milï¿½simos! <br />
 60000 x 30 = 1800000 <br />
-30 minutos é igual a 1800000 milésimos. </p>
+30 minutos ï¿½ igual a 1800000 milï¿½simos. </p>
 
 <h1>Trabalhando com strings</h1>
 <p>concatenar</p>
@@ -118,15 +118,15 @@ showmessage(s.ToString);
 ** remove um caracter apartir da pos. 1
 s.Remove(1.1);
 </pre>]
-<p>Delete(vS, 2,1); <i>// delete da variável vS, na segunda posição, 1 caractere</i></p>
-<p>Insert("z",vS,1); <i>//insere a letra z no começo da string</i></p>
-Length(vS); <i>Retorna o número de caracteres de uma string</i><br>
+<p>Delete(vS, 2,1); <i>// delete da variï¿½vel vS, na segunda posiï¿½ï¿½o, 1 caractere</i></p>
+<p>Insert("z",vS,1); <i>//insere a letra z no comeï¿½o da string</i></p>
+Length(vS); <i>Retorna o nï¿½mero de caracteres de uma string</i><br>
 Lowercase( 'SORTE' ); <i>// tranformar para 'sorte'</i><br>
 UpperCase( 'sorte' ); <i>// tranformar para 'SORTE'</i><br>
-Pos('a','Pernambuco'); <i>// retorna a posição de uma string dentro de uma outra string. valor 5</i><br>
+Pos('a','Pernambuco'); <i>// retorna a posiï¿½ï¿½o de uma string dentro de uma outra string. valor 5</i><br>
 Str(vN,vS); <i>//Converte um valor inteiro ou real(vN)para uma string(vS)</i><br>
-VAL - Esta rotina extrai o valor numérico ( tipo real ou integer ) de uma String;<br>
-Sua sintaxe é :<br>
+VAL - Esta rotina extrai o valor numï¿½rico ( tipo real ou integer ) de uma String;<br>
+Sua sintaxe ï¿½ :<br>
 Val ( S ; var v ; var Code : integer );<br>
 Observe o exemplo abaixo :<br>
 Var<br>
@@ -135,12 +135,12 @@ Begin<br>
 Val ( Edit1.Text, N, C ) ;<br>
 Button1. Top := N ;<br>
 End ;<br>
-// Se a variável C tiver valor diferente de 0 significa que ouve erra na conversção. ( ex : O texto do Edit não é um número intéiro válido )<br>
+// Se a variï¿½vel C tiver valor diferente de 0 significa que ouve erra na conversï¿½ï¿½o. ( ex : O texto do Edit nï¿½o ï¿½ um nï¿½mero intï¿½iro vï¿½lido )<br>
 <br>
 Format<br>
-//Para coloca zeros a esquerda dos números encontrados.
-%5 o valor da variável inteira "VNum"
-// .5d por que são 5 caracteres
+//Para coloca zeros a esquerda dos nï¿½meros encontrados.
+%5 o valor da variï¿½vel inteira "VNum"
+// .5d por que sï¿½o 5 caracteres
 Edit1.text:= Format('%5.5d',[VNum]);
 <br>
 //Colocar zeros a esquerda de um valor inteiro digitado no Edit<br>
@@ -150,36 +150,36 @@ Formatando com estilo de moeda
 Edit1.Text := FormatFloat('#,##0.00',vSalario);
 //Formatando uma String
 Edit1.Text := FormatFloat('#,##0.00',StrToFloat(Edit1.Text));
-Obs- (#) Cerquilha, para números obcionais. (,) Ponto para separar milhar. (.) Virgula para separar casas decimais.
+Obs- (#) Cerquilha, para nï¿½meros obcionais. (,) Ponto para separar milhar. (.) Virgula para separar casas decimais.
 <br>
 //A linha abaixo exibe em um label, seu top. Misturando String do Inteiro
-Label1.Caption := Format('O top deste label é %d',[Label1.top]);
-//Lendo uma variável inteira
-Label.Caption := Format ('O número guardado é : %d, [i]);
-// Para exibir o valor Hexadecimal de uma variável integer(i)
+Label1.Caption := Format('O top deste label ï¿½ %d',[Label1.top]);
+//Lendo uma variï¿½vel inteira
+Label.Caption := Format ('O nï¿½mero guardado ï¿½ : %d, [i]);
+// Para exibir o valor Hexadecimal de uma variï¿½vel integer(i)
 Label1.Caption := Format('$%x',[i]);
 <br>
 &Delete - Ex:
-Delete(MyString) // deleta da variável MyString, na segunda posição, um caractere
+Delete(MyString) // deleta da variï¿½vel MyString, na segunda posiï¿½ï¿½o, um caractere
 Insert - Ex:
-Insert ('z',MyString,1) // Insere a letra z no começo da String
+Insert ('z',MyString,1) // Insere a letra z no comeï¿½o da String
 InttoStr - Ex:
-MyString := InttoStr(Shape1.top)<i>//A variável MyString recebe o valor top do componente Shape1</i><br />
+MyString := InttoStr(Shape1.top)<i>//A variï¿½vel MyString recebe o valor top do componente Shape1</i><br />
 
 <p><strong>Mensagens</strong></p>
 <p>if not(MessageDlg('Quer sair do programa',mtInformation,[mbYes,mbNo],0) = mrYes) then<br />
 Form1.close;</p>
 
-<p>if (Application.MessageBox('Confirmar Exclusão','Atenção',mb_YesNo + mb_iconQuestion) = idYes) then</p>
+<p>if (Application.MessageBox('Confirmar Exclusï¿½o','Atenï¿½ï¿½o',mb_YesNo + mb_iconQuestion) = idYes) then</p>
 
-<p>If Application.MessageBox('Confirma Exclusão?','ATENÇÃO',MB_ICONEXCLAMATION + MB_YESNO) = IDYES Then<br />
+<p>If Application.MessageBox('Confirma Exclusï¿½o?','ATENï¿½ï¿½O',MB_ICONEXCLAMATION + MB_YESNO) = IDYES Then<br />
 Tb_Alunos.Delete;</p>
 
 <p><h1>INPUTBOX</h1>
-<i>//Exibe uma caixa de diálogo onde digitamos um valor que será exibido em um label</i><br>
+<i>//Exibe uma caixa de diï¿½logo onde digitamos um valor que serï¿½ exibido em um label</i><br>
 Label1.Caption := InputBox('digite','integer','');<br>
 <br>
-<i>//Sensível à maiúsculas e minúsculas. Veja abaixo dois exemplos.</i><br>
+<i>//Sensï¿½vel ï¿½ maiï¿½sculas e minï¿½sculas. Veja abaixo dois exemplos.</i><br>
 Exemplo1<br>
 procedure TForm1.Button3Click(Sender: TObject);<br>
 var<br>
@@ -202,15 +202,15 @@ try<br>
 DMAgenda.tbAgenda.Delete;<br>
 except<br>
 On E:EDBEngineError do<br>
-ShowMessage('Registro em uso por outro USUÁRIO. Exclusão Cancelada';<br>
+ShowMessage('Registro em uso por outro USUï¿½RIO. Exclusï¿½o Cancelada';<br>
 end;<br>
 <br>
-&Datas Inválidas
+&Datas Invï¿½lidas
 Try<br>
 StrtoDate(Edit1.text);<br>
 except<br>
 on EconvertError do<br>
-ShowMessage('Data Inválida');<br>
+ShowMessage('Data Invï¿½lida');<br>
 end;<br>
 <br>
 
@@ -222,11 +222,11 @@ Button1.Left := Form1.ClientWidth div 2 - Button1.Width div 2;<br />
 </p>
 
 <p><b>Senhas</b><br />
-Colocar senha numa tabela Paradox //...e retirar em tempo de execução:<br />
+Colocar senha numa tabela Paradox //...e retirar em tempo de execuï¿½ï¿½o:<br />
 Session.AddPassword('Senha-Da-Tabela');<br />
 ...<br />
 Session.RemovePassword;<br />
-outra opção...<br >
+outra opï¿½ï¿½o...<br >
 Session.AddPassword('Senha');<br>
 Table1.Active := True;<br>
 // vincule o Table1 ao Session><br>
@@ -237,7 +237,7 @@ fm_Permite.FormStyle := fsStayOnTop;</p>
 
 <h1># TECLADO</h1>
 
-<p>#0=Null #8=Backspace #13=Enter #27=Escape #32=Espaço #127=Delete </p>
+<p>#0=Null #8=Backspace #13=Enter #27=Escape #32=Espaï¿½o #127=Delete </p>
 
 <p>//fazer o Enter, substituir o Tab... <br>
 if key = #13 then <br>
@@ -255,7 +255,7 @@ begin<br>
 Key := 0;<br>
 Perform(WM_NEXTDLGCTL, 1, 0);<br>
 end;<br>
-//outra opção<br>
+//outra opï¿½ï¿½o<br>
 if Key = VK_RETURN then Perform(Wm_NextDlgCtl,0,0);<br>
 <br>
 <p>Fechar janela</p>
@@ -278,13 +278,13 @@ Caracteres especiais<br>
 chrEspecial : Set of Char =['@','#','$','%'];<br>
 //no evento OnKeyPress, digite:<br>
 If key in ChrEspecial then<br>
-ShowMessage('esta letra é especial');<br>
+ShowMessage('esta letra ï¿½ especial');<br>
 <br>
-<b>// Para digitar maiúsculas...</b><br>
+<b>// Para digitar maiï¿½sculas...</b><br>
 Key := Upcase(Key); //colocar no evento OnKeyPress de um Edit<br>
 <br>
 <br>
-Emular o pressionamento de um botão<br>
+Emular o pressionamento de um botï¿½o<br>
 If (key = VK_F1) then btnAjuda.Onclick(Self);//no evento OnKeyPress<br>
 <br>
 Para desabilitar o CTRL+ALT+DEL e ALT+TAB<br>
@@ -293,7 +293,7 @@ numero: integer;<br>
 begin<br>
 SystemParametersInfo(97,Word(true),@numero,0);<br>
 end;<br>
-{ Para habilitar é só chamar a mesma função com Word(false) }<br>
+{ Para habilitar ï¿½ sï¿½ chamar a mesma funï¿½ï¿½o com Word(false) }<br>
 <br><br>
 +++loque no form: keypreview = true. No ONKEYDOWN, digite:<br>
 if (Key= VK_RETURN) or (Key= VK_DOWN) then<br>
@@ -307,7 +307,7 @@ begin<br>
 Key := 0;<br>
 Perform(WM_NEXTDLGCTL, 1, 0);<br>
 end;<br>
-//outra opção<br>
+//outra opï¿½ï¿½o<br>
 if Key = VK_RETURN then Perform(Wm_NextDlgCtl,0,0);<br>
 <br>
 //fazer o Enter, substituir o Tab...(II)<br>
@@ -327,13 +327,13 @@ Caracteres especiais<br>
 chrEspecial : Set of Char =['@','#','$','%'];<br>
 //no evento OnKeyPress, digite:<br>
 If key in ChrEspecial then<br>
-ShowMessage('esta letra é especial');<br>
+ShowMessage('esta letra ï¿½ especial');<br>
 <br>
-<b>// Para digitar maiúsculas...</b><br>
+<b>// Para digitar maiï¿½sculas...</b><br>
 Key := Upcase(Key); //colocar no evento OnKeyPress de um Edit<br>
 <br>
 <br>
-Emular o pressionamento de um botão<br>
+Emular o pressionamento de um botï¿½o<br>
 If (key = VK_F1) then btnAjuda.Onclick(Self);//no evento OnKeyPress<br>
 <br>
 Para desabilitar o CTRL+ALT+DEL e ALT+TAB<br>
@@ -342,13 +342,13 @@ numero: integer;<br>
 begin<br>
 SystemParametersInfo(97,Word(true),@numero,0);<br>
 end;<br>
-{ Para habilitar é só chamar a mesma função com Word(false) }<br>
+{ Para habilitar ï¿½ sï¿½ chamar a mesma funï¿½ï¿½o com Word(false) }<br>
 <br><br>
 <p>- fim do teclado </p>
 <hr />
 
 
-<h1># Gráfico</h1>
+<h1># Grï¿½fico</h1>
 Grafic1.Title.Text.Clear<br>
 Grafic1.Title.Text.Add('Alunos por sexo');<br>
 With Series1 do<br>
@@ -369,7 +369,7 @@ end;
 </pre>
 +++
 
-<p>Comentar várias linhas<br />
+<p>Comentar vï¿½rias linhas<br />
 selecione e depois: ctrl + ;</p>
    
 <p>Trabalhando com a Guia Dialogs</p>
@@ -382,9 +382,9 @@ end;</p>
 
 <h1>OpenDialog</h1>
 <pre>
-OpenDialog1.FileName:= ''; // só por garantia
-s := ExtractFilePath(ParamStr(0)); // pego o diretório do exe
-OpenDialog1.InitialDir := s; // seto para o diretório que eu quero
+OpenDialog1.FileName:= ''; // sï¿½ por garantia
+s := ExtractFilePath(ParamStr(0)); // pego o diretï¿½rio do exe
+OpenDialog1.InitialDir := s; // seto para o diretï¿½rio que eu quero
 if (OpenDialog1.Execute) then
   Memo1.Lines.LoadFromFile(OpenDialog1.FileName) ; // poderia ser um RichEdit
 </pre>
@@ -448,7 +448,7 @@ FormatDateTime('dddd/dd/mmmm/yyyy',Date); ==> Sexta-feira/Setembro/1999<br>
 FormatDateTime('ddddd',Date); ==> 05/09/99<br>
 FormatDateTime('dddddd',Date); ==> Sexta=Feria, 21 de Setembro de 2001<br>
 <br>
-Furnção DayofWeek(Date); // pega numero do dia da semana..<br>
+Furnï¿½ï¿½o DayofWeek(Date); // pega numero do dia da semana..<br>
 <br>
 
 %DIA DA SEMANA<br>
@@ -466,13 +466,13 @@ QDay : string;<br>
 begin<br>
 weekday[1] := 'domingo<br>
 weekday[2] := 'segunda';<br>
-weekday[3] := 'ter‡a';<br>
+weekday[3] := 'terï¿½a';<br>
 weekday[4] := 'quarta';<br>
 weekday[5] := 'quinta';<br>
 weekday[6] := 'sexta';<br>
 weekday[7] := 'sabado'; DayNo := DayofWeek(Date); // pega numero do dia da semana..<br>
-// a mensagem exibe o valor do array na posi‡Æo n. da semana<br>
-ShowMessage('O dia ‚: ' + WeekDay[DayNo]);<br>
+// a mensagem exibe o valor do array na posiï¿½ï¿½o n. da semana<br>
+ShowMessage('O dia ï¿½: ' + WeekDay[DayNo]);<br>
 
 // Somar uma data<br>
 var<br>
@@ -493,24 +493,24 @@ end;<br>
 <br>
 
 
-O form - Métodos e Propriedades do Form<br>
-{ para um formulário aparecer sobre outros sempre }<br>
+O form - Mï¿½todos e Propriedades do Form<br>
+{ para um formulï¿½rio aparecer sobre outros sempre }<br>
 Form1.formstyle := fsOntop;<br>
 <i>{texto em um form}</i><br>
 canvas.textout(0,0,'Este texto aparece no form. Top e Left zerados');<br>
-<i>{form Elíptico}</i><br>
+<i>{form Elï¿½ptico}</i><br>
 No evento OnCreate do form, digite:<br>
 var hR : THandle;<br>
 begin<br>
 <br>
-Cria uma form de formato elíptico<br>
-Obs. Também é bom alterar a propriedade BorderStyle para bsNone. O tamanho da elípse é definido pelo tamanho do form.<br>
+Cria uma form de formato elï¿½ptico<br>
+Obs. Tambï¿½m ï¿½ bom alterar a propriedade BorderStyle para bsNone. O tamanho da elï¿½pse ï¿½ definido pelo tamanho do form.<br>
 hR := CreateEllipticRgn (0,0,Width,Height);<br>
 SetWindowRgn (Handle,hR,True);<br>
 end;<br>
 <br>
 Evitar que se tente abrir o mesmo Form, duas vezes<br>
-if form1 = nil then // se o form1 ainda não foi criado...<br>
+if form1 = nil then // se o form1 ainda nï¿½o foi criado...<br>
 ... comandos para criar um form...<br>
 //colocar no evento OnClose:<br>
 form1 := nil;
@@ -518,15 +518,15 @@ form1 := nil;
 &WINEXEC<br>
 <i>//Para executar um outro aplicativo apartir do Delphi</i><br>
 If Winexec('c:\windows\calc.exe',sw_shownormal)= 2 then<br>
-  showmessage('Arquivo não encontrado');<br>
+  showmessage('Arquivo nï¿½o encontrado');<br>
 <br>
-<i>//usados no botão fechar dos programas</i><br>
+<i>//usados no botï¿½o fechar dos programas</i><br>
 If (fileexists(PChar(vPathName + 'BackUp.exe'))) then<br>
   Winexec(PChar(vPathName + 'BackUp.exe'),SW_SHOWNORMAL);<br>
 <br>
 para abrir um arquivo<br>
 Uses =Shellapi<br>
-// vF é o arquivo que eu quero abrir<br>
+// vF ï¿½ o arquivo que eu quero abrir<br>
 ShellExecute(Handle, nil, PChar(vF), nil, nil, SW_SHOWNORMAL)<br>
 <br>
 
@@ -538,18 +538,18 @@ showmessage('Existe');</p>
 <p>var<br />
 nomecompleto,nomedoarquivo:string;<br />
 begin<br />
-   nomecompleto:=´c:\diretorio\teste.exe´;<br />
-   nomedoarquivo:=ExtractFileName(nomecompleto);<br />
+ï¿½ï¿½ï¿½nomecompleto:=ï¿½c:\diretorio\teste.exeï¿½;<br />
+ï¿½ï¿½ï¿½nomedoarquivo:=ExtractFileName(nomecompleto);<br />
 end;<br />
 </p>
 
-<p>Verificar se um diretório existe</p>
-<p>Código Inclua na seção uses: FileCtrl, Dialogs<br />
-if DirectoryExists('C:MEUSDOCS') then ShowMessage('O diretório existe')<br />
-else ShowMessage('O diretório não existe');</p>
+<p>Verificar se um diretï¿½rio existe</p>
+<p>Cï¿½digo Inclua na seï¿½ï¿½o uses: FileCtrl, Dialogs<br />
+if DirectoryExists('C:MEUSDOCS') then ShowMessage('O diretï¿½rio existe')<br />
+else ShowMessage('O diretï¿½rio nï¿½o existe');</p>
  
 
-<h1>Diretório do aplicativo</h1>
+<h1>Diretï¿½rio do aplicativo</h1>
 <p>No evento OnCreate, digite:</p>
 var<br>
 PathName: string;<br>
@@ -560,7 +560,7 @@ end;<br>
 
 <p>Alternativa</p>
 
-x := GetCurrentDir; // diretório do executável</p>
+x := GetCurrentDir; // diretï¿½rio do executï¿½vel</p>
 
 
 <h1>TComboBox</h1>
@@ -610,7 +610,7 @@ end;
 
 <h1>Memo</h1>
 
-<p> Número de linahs de um memo</p>
+<p> Nï¿½mero de linahs de um memo</p>
 <p><em>Memo.Lines.Count;</em></p>
 <p>Para ler linha por linha:</p>
 <pre>
@@ -623,14 +623,14 @@ end;
 
 <h1>Classes</h1>
 uses 'Classes'<br>
-Declarar a instância da classe<br>
+Declarar a instï¿½ncia da classe<br>
 { Private declarations }<br>
 MinhaLista: TStringList;<br>
-Executar o método construtor para instanciar a classe<br>
+Executar o mï¿½todo construtor para instanciar a classe<br>
 MinhaLista := TStringList.Create();<br>
-Depois de instanciada, os métodos e propriedades da classe ficam disponíveis<br>
+Depois de instanciada, os mï¿½todos e propriedades da classe ficam disponï¿½veis<br>
 MinhaLista.Add(Edit1.Text);<br>
-Ver o conteúdo...<br>
+Ver o conteï¿½do...<br>
 Label1.Caption := MinhaLista.GetText ;<br>
 ou...<br>
 var<br>
@@ -639,12 +639,12 @@ begin<br>
 for i := 0 to MinhaLista.Count-1 do<br>
 ListBox1.Items.Add (MinhaLista.Strings[i]);<br>
 end;<br>
-Último passo: Destruir a instância com o método destrutor<br>
+ï¿½ltimo passo: Destruir a instï¿½ncia com o mï¿½todo destrutor<br>
 MinhaLista.Destroy;<br>
 <hr />
 
 Trabalhando com Case... of<br>
-Criando seleções<br>
+Criando seleï¿½ï¿½es<br>
 var Seletor : char;<br>
 begin<br>
 Seletor := 'C';<br>
@@ -655,8 +655,8 @@ Case Seletor of<br>
 Showmessage('Escolhido C');<br>
 Halt; // encerra o programa<br>
 end;<br>
-else// caso não seja uma destas letras<br>
-ShowMessage('Não escolhido um destes ítems');<br>
+else// caso nï¿½o seja uma destas letras<br>
+ShowMessage('Nï¿½o escolhido um destes ï¿½tems');<br>
 end;<br>
 Trabalhando com Case II<br>
 Case RadioGroup1.ItemIndex of<br>
@@ -669,15 +669,15 @@ var<br>
 N : String;<br>
 begin<br>
 Repeat;<br>
-N := Inputbox('GetNumber', 'Insira um número','');<br>
+N := Inputbox('GetNumber', 'Insira um nï¿½mero','');<br>
 Until N:= '7';<br>
 end;<br>
-Atribuir Mesmo Valor para Vários Edits em um Form<br>
+Atribuir Mesmo Valor para Vï¿½rios Edits em um Form<br>
 for i := 0 to ComponentCount - 1 do<br>
 if Components[i] is TEdit then<br>
 TEdit(Components[i]).Text := Valor;<br>
 <br>
-Testa se há disco no Drive A:<br>
+Testa se hï¿½ disco no Drive A:<br>
 function TForm1.TemDiscoNoDrive(const drive : char): boolean;<br>
 var<br>
 DriveNumero : byte;<br>
@@ -700,23 +700,23 @@ procedure TForm1.Button1Click(Sender: TObject);<br>
 begin<br>
 if TemDiscoNoDrive('a') then<br>
 ShowMessage('Tem disco no drive A:')<br>
-else ShowMessage('Não tem disco no drive A:');<br>
+else ShowMessage('Nï¿½o tem disco no drive A:');<br>
 end;<br>
 <br><br>
 Close em um Form<br>
-OnCloseQuery //No evento OnCloseQuery. A segunda opção ("Não") recebe o foco.<br>
-CanClose := Application.MessageBox( 'Confirme Operação','Terminar Aplicação ?',<br>
+OnCloseQuery //No evento OnCloseQuery. A segunda opï¿½ï¿½o ("Nï¿½o") recebe o foco.<br>
+CanClose := Application.MessageBox( 'Confirme Operaï¿½ï¿½o','Terminar Aplicaï¿½ï¿½o ?',<br>
 MB_ICONQUESTION + MB_YESNO + MB_DEFBUTTON2 ) = ID_YES;<br>
 <br>
 Salvar dados antes de fechar:<br>
 //no evento OnClose:<br>
 if Table1.Modified then<br>
-if Application.MessageBox('Gravar alterações?','Dados Alterado',MB_ICONQUESTION + MB_YESNO) = IDYES then<br>
+if Application.MessageBox('Gravar alteraï¿½ï¿½es?','Dados Alterado',MB_ICONQUESTION + MB_YESNO) = IDYES then<br>
 Table1.Post<br>
 else<br>
 Table1.Cancel<br>
 <br>
-Obtendo o número serial do HD<br>
+Obtendo o nï¿½mero serial do HD<br>
 Function SerialNum(FDrive:String) :String;<br>
 Var<br>
 Serial:DWord;<br>
@@ -732,7 +732,7 @@ end;<br>
 end;<br>
 
 Criando Tabelas<br>
-Através da função FieldDefs.ADD. Parâmetros: nome do campo, tipo, Tamanho, Chave_Primária.<br>
+Atravï¿½s da funï¿½ï¿½o FieldDefs.ADD. Parï¿½metros: nome do campo, tipo, Tamanho, Chave_Primï¿½ria.<br>
 Procedure Cria_Tabela(Alias,Nome_Tabela:String);<br>
 Begin<br>
 With TTable.Create(Application) do<br>
@@ -756,14 +756,14 @@ Cria_Tabela('C:\Temp','Alunos.db');<br>
 end;<br>
 
 LOCALIZAR<br>
-//nesta caixa de diálogo, o campo nome tem que ser o primeiro<br>
-var // uma variárvel tem que ser criada.<br>
+//nesta caixa de diï¿½logo, o campo nome tem que ser o primeiro<br>
+var // uma variï¿½rvel tem que ser criada.<br>
 nome : string;<br>
 Nome : = inputbox( ' Localizar ' , ' digite o nome ' , ' ' ) ;<br>
 if nome <> ' ' then<br>
 begin<br>
 if not table1.findkey ( [ nome ] ) then<br>
-showmessage ( ' nome não encontrado ' ) ;<br>
+showmessage ( ' nome nï¿½o encontrado ' ) ;<br>
 end;<br>
 Simplificando: Table1.findkey([edit1.text])<br>
 <br>
@@ -776,31 +776,31 @@ Apenas a linha abaixo :<br>
 Table1.FindKey([Edit1.Text]);<br>
 Apenas a linha abaixo :<br>
 Table1.FindNearest([Edit1.Text]);<br>
-Table1.SetKey; // Primeiro campo é a chave<br>
+Table1.SetKey; // Primeiro campo ï¿½ a chave<br>
 Table1.FieldName('Cidade') := Edit1.Text;<br>
 Table1.GotoKey;<br>
 <br>
-Table1.IndexName := 'NomeCliente'; // procurar em um índice secundário<br>
+Table1.IndexName := 'NomeCliente'; // procurar em um ï¿½ndice secundï¿½rio<br>
 Table1.Open;<br>
 Table1.SetKey;<br>
 table1NomeCliente.AsString := Edit1.Text;<br>
 Table1.GotoNearest;<br>
 .<br>
-// Procurar em um índice primário ou secundário<br>
+// Procurar em um ï¿½ndice primï¿½rio ou secundï¿½rio<br>
 Table1.IndexName := 'Nome'<br>
 Table1.Open;<br>
 Table1.SetKey;<br>
 Table1Nome_Cliente.AsString := Edit1.Text;<br>
 Table1.GotoNearest;<br>
 <br>
-Locate// procura em um índice primário ou secundário<br>
+Locate// procura em um ï¿½ndice primï¿½rio ou secundï¿½rio<br>
 Table1.Locate('Nome',Trim(Edit1.text),[LoPartialKey,loCaseInsensitive]);<br>
 if not DM.Table1.Locate('Vendedor;Data',VarArrayOf([EditVendedor.text, EditData.text]),[loCaseInsensitive]) then<br>
-ShowMessage('O vendedor não realizou venda nesa data');<br>
+ShowMessage('O vendedor nï¿½o realizou venda nesa data');<br>
 <br>
 FindKey<br>
 //Procura um nome em um campo. ( no primeiro campo ).<br>
-// No evento OnClick do Botão Ok, digite<br>
+// No evento OnClick do Botï¿½o Ok, digite<br>
 begin<br>
 if not DataModule.tsenha.FindKey ( [ editNome.text ] ) then<br>
 beguin<br>
@@ -808,7 +808,7 @@ ShowMessage ( ' senha desconhecida ' );<br>
 Exit;<br>
 end ;<br>
 <br>
-&EXCEPTIONS - Exceções<br>
+&EXCEPTIONS - Exceï¿½ï¿½es<br>
 Access violation<br>
 Decrare a constante:<br>
 const<br>
@@ -818,22 +818,22 @@ if (E is EDBEngineError) then<br>
 if (E as EDBEngineError).Error[0].Errorcode = ChaveViolada then<br>
 begin<br>
 Table1.Cancel;<br>
-ShowMessage('este código já existe');<br>
+ShowMessage('este cï¿½digo jï¿½ existe');<br>
 end;<br>
 abort<br>
 <br>
-Outras exceções<br>
+Outras exceï¿½ï¿½es<br>
 if(E is EDBEngineError) then<br>
 with EDBEngineError(E) do<br>
 case Errors[0].ErrorCode of<br>
-DBIERR_KEYVIOL: ShowMessage('Cliente já cadastrado.');<br>
-DBIERR_REQDERR: ShowMessage('Campo obrigatório não preenchido.');<br>
+DBIERR_KEYVIOL: ShowMessage('Cliente jï¿½ cadastrado.');<br>
+DBIERR_REQDERR: ShowMessage('Campo obrigatï¿½rio nï¿½o preenchido.');<br>
 end<br>
 else<br>
 ShowMessage('Erro no banco de dados:' + #13#13 + E.Message);<br>
 Action := daAbort;<br>
 <br>
-<b>construindo gráfico</b><br>
+<b>construindo grï¿½fico</b><br>
 With Series1 do<br>
 Begin<br>
   Add( 40, 'Pencil' , clRed ) ;<br>
@@ -865,7 +865,7 @@ ORDER BY Cx_Dia<br>
 +++++++++++<br>
 
 <h1>ListBox </h1>
-<p><i>//Faz um ListBox exibir o conteúdo de uma tabela</i><br />
+<p><i>//Faz um ListBox exibir o conteï¿½do de uma tabela</i><br />
 var<br />
 i: Integer;<br />
 begin<br />
@@ -874,7 +874,7 @@ for i := 0 to Table1.FieldCount - 1 do<br />
 ListBox2.Items.Add(Table1.Fields[i].AsString);<br />
 end;<br />
 <br />
-<p><i>Pegar o conteúdo</i><br />
+<p><i>Pegar o conteï¿½do</i><br />
 ShowMessage(ListBox1.Items[ListBox1.ItemIndex]);</p>
 <hr />
 
@@ -886,12 +886,12 @@ lbSelecionados.Items.Add(TTexto(clbItems.Items.Objects[i]).Valor);<br />
 <br />
 
 <p>%BOOKMARKS</p>
-//guardar uma posição no registro<br>
+//guardar uma posiï¿½ï¿½o no registro<br>
 var<br>
 BM :tBookMark;<br>
 {...}<br>
 // Grava um Registro<br>
-if bm = nil then // se bm está vazio então...<br>
+if bm = nil then // se bm estï¿½ vazio entï¿½o...<br>
 bm := table1.GetBookMark; // marque um<br>
 ou<br>
 if BookMark = nil then<br>
@@ -899,9 +899,9 @@ BookMark := Table1.GetBookMark;<br>
 {++}<br>
 <br>
 // ir para o registro guardado<br>
-if BookMark <> nil then // se o BookMark não está vazio...<br>
+if BookMark <> nil then // se o BookMark nï¿½o estï¿½ vazio...<br>
 begin<br>
-table1.GotoBookMark(BookMark) // vá para o marcado<br>
+table1.GotoBookMark(BookMark) // vï¿½ para o marcado<br>
 end;<br>
 ou..<br>
 if BM <> nil then<br>
@@ -909,8 +909,8 @@ begin<br>
 BM := table1.GetBookMark(BM);<br>
 <br>
 {++}<br>
-//limpa da memória o registro guardado<br>
-if BookMark <> nil then // se o BookMark não está vazio então faça..<br>
+//limpa da memï¿½ria o registro guardado<br>
+if BookMark <> nil then // se o BookMark nï¿½o estï¿½ vazio entï¿½o faï¿½a..<br>
 begin<br>
 Table1.FreeBookMark (BookMark); // libere o marcado..<br>
 BookMark := nil; // deixe-o vazio<br>
@@ -960,11 +960,11 @@ SGridC.Cells[0,vk] :=  ComplementoNome[vcodigo];<br />
     end;<br />
 </p>
 <p>Pegando a linha que foi selecionada</p>
-<p>OnSelectCell <i> = esta é o evento</i></p>
-<p>linhax := Arow; <i>// pego a linha que está selecionada</i></p>
+<p>OnSelectCell <i> = esta ï¿½ o evento</i></p>
+<p>linhax := Arow; <i>// pego a linha que estï¿½ selecionada</i></p>
 
 <p></p>
-<p>Pegar o código da linha</p>
+<p>Pegar o cï¿½digo da linha</p>
 <pre>
 var
   k : Integer;
@@ -974,7 +974,7 @@ begin
   end;
   if (k = 0) then
     begin
-      erro('Campo não escolhido','Escolha um exame complementar');
+      erro('Campo nï¿½o escolhido','Escolha um exame complementar');
       exit;
     end;
 </pre>
@@ -990,7 +990,7 @@ begin
   Bitmap.Free;
 </pre>
 
-<p>Colocar o texto à direita ou centralizado</p>
+<p>Colocar o texto ï¿½ direita ou centralizado</p>
 <pre>
 procedure TForm1.StringGrid1DrawCell(Sender: 
 TObject; ACol, 
@@ -1019,7 +1019,7 @@ end;
 
 
 <b>DBGrid</b><br>
-Maiúsculo ou Minúsculo no DBGrid<br>
+Maiï¿½sculo ou Minï¿½sculo no DBGrid<br>
 <i>//OnKeyPress do DBGrid:</i><br>
 Key := AnsiUpperCase(Key)[1];<i>//ou</i><br>
 Key := AnsiLowerCase(Key)[1];<br>
@@ -1027,7 +1027,7 @@ Key := AnsiLowerCase(Key)[1];<br>
 Cores do DBGRid<br>
 Coloque a propriedade defaultdrawdata do dbgrid em FALSE<br>
 No evento onDrawColumnCell coloque<br>
-If QyTalPrazo.Value > DATE then<i> // condição </i><br>
+If QyTalPrazo.Value > DATE then<i> // condiï¿½ï¿½o </i><br>
 begin<br>
 Dbgrid1.Canvas.Font.Color:= clFuchsia; <i>// coloque aqui a cor desejada</i><br>
 DBGrid1.Canvas.Brush.Color:= clAqua;<br>
@@ -1050,16 +1050,16 @@ S : String; begin<br>
 Case Table1.State of<br>
 dsInactive : S := 'Inativo';<br>
 dsBrownse : S := 'Browse';<br>
-dsEdit : S := 'Edição';<br>
-dsInsert : S := 'Inserção';<br>
+dsEdit : S := 'Ediï¿½ï¿½o';<br>
+dsInsert : S := 'Inserï¿½ï¿½o';<br>
 dsSetKey : S := 'SetKey';<br>
 dsCalcFields : S := 'CalkFields';<br>
 end;<br>
 Label1.Caption := S;<br>
 <br>
-<b>Para digitar só números em um edit</b><br>
+<b>Para digitar sï¿½ nï¿½meros em um edit</b><br>
 if not (Key in['0'..'9',Chr(8)]) then Key:= #0;<i> //evento OnKeyPress</i><br>
-<i>// Obs: Chr(8), para BackSpace e DecimalSeparator, para a vírgula dentro dos colchetes.</i></br>
+<i>// Obs: Chr(8), para BackSpace e DecimalSeparator, para a vï¿½rgula dentro dos colchetes.</i></br>
 <br>
 Alias<br>
 <br>
@@ -1071,12 +1071,12 @@ Inclua em Uses = BDE e BD;<br>
 <br>
 {Criando Alias II}<br>
 vPathName := ExtractFilePath (ParamStr (0));<br>
-{ se o alias não existir... }<br>
+{ se o alias nï¿½o existir... }<br>
 if not Session1.IsAlias('Infocad') then<br>
 begin<br>
 { Adiciona o alias }<br>
 Session1.AddStandardAlias('Infocad', vPathName, 'PARADOX');<br>
-{Salva o arquivo de configuração do BDE }<br>
+{Salva o arquivo de configuraï¿½ï¿½o do BDE }<br>
 Session1.SaveConfigFile;<br>
 end;<br>
 <br>
@@ -1085,8 +1085,8 @@ end;<br>
 session1.ConfigMode:=cmSession;<br>
 Session1.AddStandardAlias('NomedoAlias','C:\Arquivos de Programas\Arquivos comuns\Borland Shared\Data','PARADOX');
 <br>
-Atualizando as informações em ambiente de rede<br>
-Acessando a mesma tabela concorrente com outra estação ou outro objeto Query, Table<br>
+Atualizando as informaï¿½ï¿½es em ambiente de rede<br>
+Acessando a mesma tabela concorrente com outra estaï¿½ï¿½o ou outro objeto Query, Table<br>
 a) Crie procedure para uso no evento OnActive:<br>
 Procedue TTorm1.FormRefresh(Sender: TObject);<br>
 begin<br>
@@ -1094,9 +1094,9 @@ Table1.Refresh;<br>
 ...<br>
 TableN.Refresh;<br>
 end;<br>
-b)No evento OnActive do formulário acrescente a linha:<br>
+b)No evento OnActive do formulï¿½rio acrescente a linha:<br>
 Application.OnActive := FormRefresh;<br>
-c) No evento OnShow do formulário acreste a linha<br>
+c) No evento OnShow do formulï¿½rio acreste a linha<br>
 FormRefresh(Sender);<br>
 d) No evento OnAfterPost de cada objeto TTable acrescente as linhas;<br>
 Table.FlushBuffer;<br>
@@ -1111,9 +1111,9 @@ USES BDE:<br>
 DbiSaveChandges((Dataset as TTable).Handle);<br>
 <br>
 &DBNavigator<br>
-//Para pegar o nome do botão que foi pressionado<br>
+//Para pegar o nome do botï¿½o que foi pressionado<br>
 DBNavigator1.BtnClick(nbNext);<br>
-// pegando o botão clicado<br>
+// pegando o botï¿½o clicado<br>
 if Button in [nbFirst,nbLast,nbPrior,nbNext] then<br>
 DBNavigator.DataSource.DataSet.Refresh;<br>
 <br>
@@ -1129,22 +1129,22 @@ Variants <i>(para trabalhar com variantes)</i><br />
 <i>// 6- amarelo 5- azul 16- cinza escuro 17- azul claro 3- vermelho 7- rosa 8- azulclaro 9- marrom</i><br>
 <i>//declare isto na private da Unit</i><br>
 FExcel : Variant;<br>
-<i>//CONTEÚDO DO BOTÃO</i><br />
+<i>//CONTEï¿½DO DO BOTï¿½O</i><br />
 var<br>
 vColR : Variant; <i>//colres e estilos</i><br>
 vCelR : Variant; <i>//formulas e cores internas</i><br>
 li : integer; <i>//para a tabela</i><br>
 begin<br>
-If not(Application.MessageBox('Exportar dados para o Excel?','ATENÇÃO',MB_ICONEXCLAMATION + MB_YESNO) = IDYES) Then<br>
+If not(Application.MessageBox('Exportar dados para o Excel?','ATENï¿½ï¿½O',MB_ICONEXCLAMATION + MB_YESNO) = IDYES) Then<br>
 exit;<br>
 FExcel := CreateOleObject('Excel.Application');<br>
 FExcel.Visible := False;<br>
 FExcel.Workbooks.Add(-4167);//tem q ter<br>
-//conteúdo - linha coluna<br>
+//conteï¿½do - linha coluna<br>
 li := 1;<br />
 FExcel.WorkBooks[1].Sheets[1].Cells[li,1]:='Nome da Escola';<br />
 Inc(li);<br />
-FExcel.WorkBooks[1].Sheets[1].Cells[li,1]:='Titulo do Relatório';<br>
+FExcel.WorkBooks[1].Sheets[1].Cells[li,1]:='Titulo do Relatï¿½rio';<br>
 Inc(li);<br>
 FExcel.WorkBooks[1].Sheets[1].Cells[li,1]:='Coluna Um';<br>
 FExcel.WorkBooks[1].Sheets[1].Cells[li,2]:='Coluna Dois';<br>
@@ -1160,7 +1160,7 @@ vCelR.Formula := '=A4+B4';//coloco uma formula<br>
 vCelR.Columns.Interior.ColorIndex := 6;//coloco a cor de fundo<br>
 vCelR.Borders.LineStyle := 1; //escolho a borada<br>
 <br>
-//trabalhando com a página indicada<br />
+//trabalhando com a pï¿½gina indicada<br />
 vColR := FExcel.Workbooks[1].WorkSheets['Nota10'].Columns;<br />
 vColR.Columns[1].ColumnWidth := 5;//tamanho da colulas<br />
 vColR.Columns[2].ColumnWidth := 50;<br />
@@ -1168,7 +1168,7 @@ vColR.Columns[2].ColumnWidth := 50;<br />
 vColR.Columns.Item[1].Font.Bold := True;<br />
 vColR.Columns[1].Font.Color := clBlue;<br />
 FExcel.Columns.AutoFit; <em>// faz com que as colunas se expandam conform o tamanho</em><br />
-ShowMessage('Concluído');<br>
+ShowMessage('Concluï¿½do');<br>
 
 FExcel.Visible := True;<br>
 <br>
@@ -1180,8 +1180,8 @@ FExcel.Quit;<br>
 //declare isto na private da Unit<br>
 vW : Variant;<br>
 <br>
-//begin do botão<br>
-If not(Application.MessageBox('Exportar para o Word?','ATENÇÃO',MB_ICONEXCLAMATION + MB_YESNO) = IDYES) Then
+//begin do botï¿½o<br>
+If not(Application.MessageBox('Exportar para o Word?','ATENï¿½ï¿½O',MB_ICONEXCLAMATION + MB_YESNO) = IDYES) Then
 exit;<br>
 <br>
 vW:= CreateOleObject('Word.Application');<br>
@@ -1189,15 +1189,15 @@ vW.Visible := false;<br>
 vW.Documents.Add;<br>
 vW.Selection.TypeText(Text := 'Documento do Word com Tabelas');<br>
 vW.Selection.TypeText(Text := #13);//prox. linha<br>
-vW.Selection.TypeText(Text := 'aldo' + #9 + 'pai' + #9 + 'gravatá');<br>
+vW.Selection.TypeText(Text := 'aldo' + #9 + 'pai' + #9 + 'gravatï¿½');<br>
 //Adiciona tabela de 2 linhas e 3 colunas<br>
 vW.ActiveDocument.Tables.Add(<br>
 Range := vW.Selection.Range,<br>
 NumRows := 2,<br>
 NumColumns := 2);<br>
-//Escreve na primeira célula }<br>
+//Escreve na primeira cï¿½lula }<br>
 vW.Selection.TypeText(Text := 'Linha 1, Coluna 1');<br>
-vW.Selection.MoveRight(12);//Próxima célula<br>
+vW.Selection.MoveRight(12);//Prï¿½xima cï¿½lula<br>
 vW.Selection.TypeText(Text := 'Linha 1, Coluna 2');<br>
 vW.Selection.MoveRight(12);<br>
 vW.Selection.TypeText(Text := 'Linha 2, Coluna 1');<br>
@@ -1211,7 +1211,7 @@ vW.Selection.Font.Bold := true;<br>
 vW.Selection.TypeText(Text := 'negrito' + #13);<br>
 vW.Selection.Font.Bold := false;<br>
 vW.Selection.Font.Italic := true;<br>
-vW.Selection.TypeText(Text := 'itálico' + #13);<br>
+vW.Selection.TypeText(Text := 'itï¿½lico' + #13);<br>
 vW.Selection.Font.Italic := false;<br>
 vW.Selection.Font.Size := 20;<br>
 vW.Selection.TypeText(Text := 'texto grande' + #13);<br>
@@ -1261,11 +1261,11 @@ end;<br>
 <br>
 CopyFile, para copiar arquivos<br>
 CopyFile(pchar('c:\conto.txt'),('a:\conto.txt'),false);<br>
-// no final: true=não regrava o arquivo, se false, ele regrava.<br>
+// no final: true=nï¿½o regrava o arquivo, se false, ele regrava.<br>
 <br>
 A Tecla Pressionada<br>
 //No evento OnKeyDown, digite:<br>
-Label1.Caption := Format('O código da tecla é: %d', [Key]);<br>
+Label1.Caption := Format('O cï¿½digo da tecla ï¿½: %d', [Key]);<br>
 <br>
 O componente TMediaPlayer<br>
 Para ouvir um som<br>
@@ -1296,12 +1296,12 @@ RichEdit1.Lines.LoadFromFile('c:\aviso.txt');</p>
 ReachEdit1.Font.Color := clGreen;<br>
 Estilos de Texto<br>
 //testo em negrito<br>
-if CheckNegrito.Checked then //Para o botão Negrito<br>
+if CheckNegrito.Checked then //Para o botï¿½o Negrito<br>
 Memo1.Font.Style := Memo1.Font.Style + [fsBold] // coloca em estilo negrito<br>
 else<br>
 Memo1.Font.Style := Memo1.Font.Style - [fsBold]; // retira o estilo negrito<br>
-//Memo1.Font.Style := Memo1.Font.Style + [fsItalic] // Para o botão Itálicov
-//Memo1.Font.Style := Memo1.Font.Style + [fsUnderline] // Para o botão Sublinhado<br>
+//Memo1.Font.Style := Memo1.Font.Style + [fsItalic] // Para o botï¿½o Itï¿½licov
+//Memo1.Font.Style := Memo1.Font.Style + [fsUnderline] // Para o botï¿½o Sublinhado<br>
 
 <h2> texto em negrito II </h2>
 <p>if BoldButton.Down then <br />
@@ -1350,7 +1350,7 @@ begin
   Reset(f); //abre o arquivo para leitura;
   while not eof(f) do
   begin
-    Readln(f,linha); //le do arquivo e desce uma linha. O conteúdo lido é transferido para a variável linha
+    Readln(f,linha); //le do arquivo e desce uma linha. O conteï¿½do lido ï¿½ transferido para a variï¿½vel linha
     Memo1.lines.add(linha);
   end;
   Closefile(f);
@@ -1361,15 +1361,15 @@ end;
 
 <p>var <br>
 
-vArqRel : TextFile;<i>// Declarei a variaável</i><br >
+vArqRel : TextFile;<i>// Declarei a variaï¿½vel</i><br >
 f : String; <br>
 begin <br>
-f := ExtractFilePath(ParamStr (0)) + 'User.txt'; <i>// no local do executável</i><br />
+f := ExtractFilePath(ParamStr (0)) + 'User.txt'; <i>// no local do executï¿½vel</i><br />
 <pre>
 try
   AssignFile(vArqRel, f);
   Rewrite(vArqRel); // esta linha OU a de baixo = este apaga o texto existe para algo novo
-  Append(vArqRel); // abre para gravação no fim do texto existente
+  Append(vArqRel); // abre para gravaï¿½ï¿½o no fim do texto existente
   WriteLn(vArqRel, 'aldosena10@gmail.com');
 finally
     CloseFile(vArqRel);
@@ -1390,36 +1390,36 @@ end;
 </pre>
 
 <p>AssignFile(arq, nomeArq); - 
-<i>Associa um nome lógico de arquivo (arq) ao arquivo físico (nomeArq). "nomeArq" é uma cadeia de caracteres que representa qualquer nome de arquivo a ser manipulado. 
-Este nome é atribuído à variável "arq" e todas as operações sobre "arq" serão realizadas no arquivo em disco de nome "nomeArq"..</i><br />
+<i>Associa um nome lï¿½gico de arquivo (arq) ao arquivo fï¿½sico (nomeArq). "nomeArq" ï¿½ uma cadeia de caracteres que representa qualquer nome de arquivo a ser manipulado. 
+Este nome ï¿½ atribuï¿½do ï¿½ variï¿½vel "arq" e todas as operaï¿½ï¿½es sobre "arq" serï¿½o realizadas no arquivo em disco de nome "nomeArq"..</i><br />
 
 <p> Rewrite(arq); - 
-<i>Um novo arquivo em disco com o nome atribuído à variável é criado e preparado para processamento, um ponteiro é colocado no início do arquivo criado.<br />
-Caso o arquivo a ser criado já exista, esta instrução apaga o arquivo para criá-lo novamente.<br>
-Um novo arquivo em disco com o nome atribuído à variável "arq" é criado e preparado para processamento, um ponteiro de arquivo é colocado no início do arquivo criado. Caso o arquivo a ser criado já exista, esta instrução apaga o arquivo para criá-lo novamente. </i></p>
+<i>Um novo arquivo em disco com o nome atribuï¿½do ï¿½ variï¿½vel ï¿½ criado e preparado para processamento, um ponteiro ï¿½ colocado no inï¿½cio do arquivo criado.<br />
+Caso o arquivo a ser criado jï¿½ exista, esta instruï¿½ï¿½o apaga o arquivo para criï¿½-lo novamente.<br>
+Um novo arquivo em disco com o nome atribuï¿½do ï¿½ variï¿½vel "arq" ï¿½ criado e preparado para processamento, um ponteiro de arquivo ï¿½ colocado no inï¿½cio do arquivo criado. Caso o arquivo a ser criado jï¿½ exista, esta instruï¿½ï¿½o apaga o arquivo para criï¿½-lo novamente. </i></p>
 
 <p> Reset(arq); - 
-<i>Prepara um arquivo <b>existente</b>  para leitura e coloca o ponteiro de arquivo no início. <br>
-Caso o arquivo não exista, esta instrução provocará um erro de Entrada/Saída (Input/Output).<br>
-Prepara um arquivo existente para leitura e coloca o ponteiro de arquivo no início. Caso o arquivo não exista, esta instrução provocará um erro de Entrada/Saída (Input/Output).</i><br />
+<i>Prepara um arquivo <b>existente</b>  para leitura e coloca o ponteiro de arquivo no inï¿½cio. <br>
+Caso o arquivo nï¿½o exista, esta instruï¿½ï¿½o provocarï¿½ um erro de Entrada/Saï¿½da (Input/Output).<br>
+Prepara um arquivo existente para leitura e coloca o ponteiro de arquivo no inï¿½cio. Caso o arquivo nï¿½o exista, esta instruï¿½ï¿½o provocarï¿½ um erro de Entrada/Saï¿½da (Input/Output).</i><br />
 
 <p>Append(arq); - 
-<i> Abre um arquivo texto existente para estendê-lo (saídas adicionais). Caso o arquivo não exista, esta instrução provocará um erro de Entrada/Saída (Input/Output).</i></p>
+<i> Abre um arquivo texto existente para estendï¿½-lo (saï¿½das adicionais). Caso o arquivo nï¿½o exista, esta instruï¿½ï¿½o provocarï¿½ um erro de Entrada/Saï¿½da (Input/Output).</i></p>
 
 <p>CloseFile(arq); - 
 <i>Fecha o arquivo texto aberto.</i><br />
 Readln(arq, linha); - 
-<i>Lê uma linha no arquivo indicado por "arq".</i><br />
+<i>Lï¿½ uma linha no arquivo indicado por "arq".</i><br />
 Read(arq, ch); - 
-<i>Lê um caractere no arquivo indicado por "arq".</i><br />
-Writeln(arq, lista_de_expressões); - 
+<i>Lï¿½ um caractere no arquivo indicado por "arq".</i><br />
+Writeln(arq, lista_de_expressï¿½es); - 
 <i>Grava no arquivo texto "arq" um ou mais valores colocando a marca de fim-de-linha no final da lista.</i><br />
-Write(arq, lista_de_expressões); - 
-<i>Grava no arquivo texto "arq" um ou mais valores em sequência.</i><br />
+Write(arq, lista_de_expressï¿½es); - 
+<i>Grava no arquivo texto "arq" um ou mais valores em sequï¿½ncia.</i><br />
 Eoln(arq); - 
-<i>Função lógica que retorna True se é final de linha, ou seja, se o ponteiro do arquivo indica a leitura da marca de fim-de-linha (CR/LF). Caso contrário, a função retorna False.</i><br />
+<i>Funï¿½ï¿½o lï¿½gica que retorna True se ï¿½ final de linha, ou seja, se o ponteiro do arquivo indica a leitura da marca de fim-de-linha (CR/LF). Caso contrï¿½rio, a funï¿½ï¿½o retorna False.</i><br />
 Eof(arq); - 
-<i>Função lógica que retorna True caso o ponteiro do arquivo indique a leitura da marca de fim-de-arquivo, caso contrário, a função retorna False.  </i></p>  
+<i>Funï¿½ï¿½o lï¿½gica que retorna True caso o ponteiro do arquivo indique a leitura da marca de fim-de-arquivo, caso contrï¿½rio, a funï¿½ï¿½o retorna False.  </i></p>  
   
 <p>Movimento</p>
 fazer um panel ter seu texto em movimento<br>
@@ -1432,8 +1432,8 @@ end;<br>
 
 
 <p>ColorGrid</p>
-Form1.Color := ColorGrid1.ForegroundColor ; //botão esquerdo do mouse<br>
-Form1.Color := ColorGrid1.BackgroundColor ;// botão direito do mouse<br>
+Form1.Color := ColorGrid1.ForegroundColor ; //botï¿½o esquerdo do mouse<br>
+Form1.Color := ColorGrid1.BackgroundColor ;// botï¿½o direito do mouse<br>
 <br>
 
 <h1>Arquivos</h1>
@@ -1485,7 +1485,7 @@ Arquivos Help<br>
 WinHelp(Form1.handle, 'c:\Ajuda.hlp', HELP_CONTENTES,0);<br>
 <br>
 &Randomize<br>
-//A linha de comando abaixo faz o label exibir aleatóriamente um número de 1 a 100<br>
+//A linha de comando abaixo faz o label exibir aleatï¿½riamente um nï¿½mero de 1 a 100<br>
 Label1.Caption := InttoStr(Random(100));<br>
 <br>
 &Hint<br>
@@ -1494,7 +1494,7 @@ Application.HintColor := clYellow; // define a cor de todos os hints<br>
 Application.HintPause := 200; // define o tempo de espera de um hint<br>
 Edit1.hint := 'Primeira linha' + #13 + 'segunda linha';//Hint com quebra de linha<br>
 <br>
-&Criar um componente em tempo de execução<br>
+&Criar um componente em tempo de execuï¿½ï¿½o<br>
 var<br>
 PictImg1 : TImage;//declarando um TImage<br>
 begin<br>
@@ -1510,7 +1510,7 @@ Cores com RGB<br>
 Form1.Color := Rgb(100, 100, 100);<br>
 <br>
 &Progess Bar<br>
-Criando um ProgressBar em tempo de execução<br>
+Criando um ProgressBar em tempo de execuï¿½ï¿½o<br>
 //Declare a procedure abaixo<br>
 procedure TestProgress(Form: TForm; Count: SmallInt);<br>
 var<br>
@@ -1538,8 +1538,8 @@ form2.show;<br>
 O Componente TCalendar<br>
 Calendar1.PrevYear;//para exibir o ano anterior<br>
 Calendar1.NextYear;//para exibir o proximo ano<br>
-Calendar1.PrevMonth;//para exibir o mês anterior<br>
-Calendar1.NextMonth;//para exibir o próximo mês<br>
+Calendar1.PrevMonth;//para exibir o mï¿½s anterior<br>
+Calendar1.NextMonth;//para exibir o prï¿½ximo mï¿½s<br>
 Calendar1.CalendarDate := CalendarDate - 1;// vai para um dia anterior<br>
 Calendar1.CalendarDate := CalendarDate + 1;// vai para o proximo dia<br>
 <br>
@@ -1552,37 +1552,37 @@ QDay : string;<br>
 begin<br>
 weekday[1] := 'domingo<br>
 weekday[2] := 'segunda';<br>
-weekday[3] := 'ter‡a';<br>
+weekday[3] := 'terï¿½a';<br>
 weekday[4] := 'quarta';<br>
 weekday[5] := 'quinta';<br>
 weekday[6] := 'sexta';<br>
 weekday[7] := 'sabado'; DayNo := DayofWeek(Date); // pega numero do dia da semana..<br>
-// a mensagem exibe o valor do array na posi‡Æo n. da semana<br>
-ShowMessage('O dia ‚: ' + WeekDay[DayNo]);<br>
+// a mensagem exibe o valor do array na posiï¿½ï¿½o n. da semana<br>
+ShowMessage('O dia ï¿½: ' + WeekDay[DayNo]);<br>
 <br>
-Verificando os dígitoso do ano<br>
+Verificando os dï¿½gitoso do ano<br>
 Function AnoQuatroDigitos: Boolean;<br>
 begin<br><br>
 Result := (Pos('yyyy',SHortDateFormat)>0);<br>
 if Result = True then<br>
-ShowMessage('O ano esta configurado para quatro dígitos.')<br>
+ShowMessage('O ano esta configurado para quatro dï¿½gitos.')<br>
 else
-ShowMessage('O ano não esta configurado para quatro dígitos.');<br>
+ShowMessage('O ano nï¿½o esta configurado para quatro dï¿½gitos.');<br>
 end;<br>
 <br>
 &Trabalhando com Frames<br>
 // No menu File>New, insira um TFrame.<br>
 Declare em { Private declarations }<br>
 FFrame: TFrame;<br>
-// Dois botões usando a mesma variável do frame...<br>
-// botão um..<br>
+// Dois botï¿½es usando a mesma variï¿½vel do frame...<br>
+// botï¿½o um..<br>
 if FFrame <> nil then<br>
 FFrame.Free;<br>
 FFrame := TFrame1.Create(pnlParent);<br>
 FFrame.Align := alClient;<br>
 FFrame.Parent := pnlParent;<br>
 <br>
-// botão dois..<br>
+// botï¿½o dois..<br>
 if FFrame <> nil then<br>
 FFrame.Free;<br>
 FFrame := TFrame2.Create(pnlParent);<br>
@@ -1600,23 +1600,23 @@ BMP.LoadFromFile(OpenPictureDialog1.FileName);<br>
 Table1Graphic.Assign(BMP);<br>
 end;<br>
 <br><br>
-<b>#impressões</b><br>
-O botão minimizar do quickReport.Alterar o arquivo Qrprev.dfm na pasta Lib.:<br>
+<b>#impressï¿½es</b><br>
+O botï¿½o minimizar do quickReport.Alterar o arquivo Qrprev.dfm na pasta Lib.:<br>
 BorderIcons = [biSystemMenu,biMaximize]<br>
 <br>
 <b>TPrinter</b><br>
 //Uses Printers<br>
-BiginDoc = inicia uma impressão<br>
-EndDoc = finaliza uma impressão<br>
-Abrot = interrompe a impressão<br>
-Priting = para saber se esta havendo uma impressão<br>
+BiginDoc = inicia uma impressï¿½o<br>
+EndDoc = finaliza uma impressï¿½o<br>
+Abrot = interrompe a impressï¿½o<br>
+Priting = para saber se esta havendo uma impressï¿½o<br>
 printers = lista as impressoras instaladas<br>
 PrinterIndex = indica a impessora selecionada<br>
 Fonts = lista as fontes da impressora<br>
-Orientation ( em Portrait ou LandScape) = orientação do papel<br>
-PageHeight = Altura da página<br>
-PageWidth = Largura da página<br>
-PageNumber = Número da página atual<br>
+Orientation ( em Portrait ou LandScape) = orientaï¿½ï¿½o do papel<br>
+PageHeight = Altura da pï¿½gina<br>
+PageWidth = Largura da pï¿½gina<br>
+PageNumber = Nï¿½mero da pï¿½gina atual<br>
 exemplo:<br>
 Procedure TForm1.Button1Click(Sender: TObject);<br>
 var Arquivo : TextFile;<br>
@@ -1625,35 +1625,35 @@ AssignFile(Arquivo,'LPT1');<br>
 Rewrite(Arquivo);<br>
 Writeln(Arquivo,'Teste de impressao - Linha 0');<br>
 Writeln(Arquivo,'Teste de impressao - Linha 1');<br>
-Writeln(Arquivo,#27#15+'Teste de Impressão - Linha 2');<br>
+Writeln(Arquivo,#27#15+'Teste de Impressï¿½o - Linha 2');<br>
 Writeln(Arquivo,'Teste de impressao - Linha 3');<br>
-Writeln(Arquivo,#27#18+'Teste de Impressão - Linha 4');<br>
+Writeln(Arquivo,#27#18+'Teste de Impressï¿½o - Linha 4');<br>
 Writeln(Arquivo,'Teste de impressao - Linha 5');<br>
-Writeln(Arquivo,#12); // Ejeta a página<br>
+Writeln(Arquivo,#12); // Ejeta a pï¿½gina<br>
 CloseFile(Arquivo);<br>
 end;<br>
 <br>
 <h1>#internet</h1>
-<p>Para executar um página da Web I<br />
+<p>Para executar um pï¿½gina da Web I<br />
 Winexec ( 'start c:\windows\index.html',sw_ShowMinimized )</p>
 
-<p>Para executar um página da Web II<br />
+<p>Para executar um pï¿½gina da Web II<br />
 ShellExecute(Handle, 'open', HTMLFile, nil, nil, SW_SHOWNORMAL);<br />
-Chamando um site utilizando o seu browse padrão. Coloque em USES:UrlMon;<br />
+Chamando um site utilizando o seu browse padrï¿½o. Coloque em USES:UrlMon;<br />
 HlinkNavigateString(nil, 'http://www.geocities.com/escolarte');<br>
-//Verificando se você está conectado a Internet<br>
-//Inclua um componente TCP no Form, e digite o código:<br>
+//Verificando se vocï¿½ estï¿½ conectado a Internet<br>
+//Inclua um componente TCP no Form, e digite o cï¿½digo:<br>
 if (TCP1.LocalIP = '0.0.0.0' or<br>
 TCP1.LocalIP = '127.0.0.1') then<br>
-ShowMessage('Não existe conexão')<br>
+ShowMessage('Nï¿½o existe conexï¿½o')<br>
 else<br>
-ShowMessage('Existe Conexão')<br>
+ShowMessage('Existe Conexï¿½o')<br>
 
 <h1># WebBrowser </h1>
 <p>memo1.Text := WebBrowser1.OleObject.Document.documentElement.innerText;</p>
 <p>memo1.Text := WebBrowser1.OleObject.document.Body.InnerHTML;</p>
 
-<p>Imprimir sem caixa de diálogo:</p>
+<p>Imprimir sem caixa de diï¿½logo:</p>
 <pre>
 procedure TForm1.Button2Click(Sender: TObject);
 var
@@ -1666,7 +1666,7 @@ begin
 end;
 </pre>
 
-<p>Imprimir com caixa de diálogo:</p>
+<p>Imprimir com caixa de diï¿½logo:</p>
 <pre>
 procedure TForm1.Button3Click(Sender: TObject);
 var
@@ -1679,7 +1679,7 @@ begin
 end;
 </pre>
 
-<p>Pré visualização de impressão:</p>
+<p>Prï¿½ visualizaï¿½ï¿½o de impressï¿½o:</p>
 <pre>
 procedure TForm1.Button4Click(Sender: TObject);
 var
@@ -1692,7 +1692,7 @@ begin
 end;
 </pre>
 
-<p>Configuração da impressão:</p>
+<p>Configuraï¿½ï¿½o da impressï¿½o:</p>
 <pre>
 procedure TForm1.Button5Click(Sender: TObject);
 var
@@ -1707,7 +1707,7 @@ end;
 
 
 
-<h2>Pegar o conteúdo de uma página html:</h2>
+<h2>Pegar o conteï¿½do de uma pï¿½gina html:</h2>
 <pre>
 procedure TForm1.Button1Click(Sender: TObject);
  Const
@@ -1752,15 +1752,15 @@ Memo1.Lines.LoadFromFile('C:\arquivo.txt',TEncoding.UTF8);</p>
 
 
 <h1>Usando o IBX:</h1>
-<p>Usarei como o nome do servidor onde está instalado o INTERBASE<br />
+<p>Usarei como o nome do servidor onde estï¿½ instalado o INTERBASE<br />
 "SERVER_IB"<br>
-O banco de dados estará instalado no path<br>
+O banco de dados estarï¿½ instalado no path<br>
 "C:\IB_DB\GUESTS.GDB" o caminho c:\ib_db\guests.gdb REFERE-SE A UNIDADE C: DO SERVIDOR.<br>
 <br>
 Arquivo Hosts.sam<br>
 <br>
-Procure o arquivo HOSTS.SAM no diretório windows das máquinas clientes:<br>
-Caso o ip do servidor seja 192.198.25.4 então coloque em uma linha do arquivo hosts.sam 192.198.25.4 SERVIDOR
+Procure o arquivo HOSTS.SAM no diretï¿½rio windows das mï¿½quinas clientes:<br>
+Caso o ip do servidor seja 192.198.25.4 entï¿½o coloque em uma linha do arquivo hosts.sam 192.198.25.4 SERVIDOR
 No componente TIBDatabase, propriedade DatabaseName coloque:<br>
 SERVER_IB:C:\IB_DB\GUESTS.GDB<br>
 Informe na propriedade PARAMS do TIBDATABASE as seguintes strings:<br>
@@ -1769,24 +1769,24 @@ password=masterkey<br>
 . atribua para FALSE a propriedade LOGIN PROMPT<br>
 Coloque um TIBTransaction e na propriedade DefaultTransaction do TIBDatabase atribua ao componente TIBTransaction.
 clique no componente TIBTransaction e na propriedade DEFAULTDATABASE coloque o TIBDATABASE.<br>
-agora dê um clique duplo no componente TIBTransaction e sete o nível de transação para READ COMMITED e retire o parâmetro no wait ( para não acontecer o dead lock em caso de multiplas edições do registro )
+agora dï¿½ um clique duplo no componente TIBTransaction e sete o nï¿½vel de transaï¿½ï¿½o para READ COMMITED e retire o parï¿½metro no wait ( para nï¿½o acontecer o dead lock em caso de multiplas ediï¿½ï¿½es do registro )
 <br>
 <br>
 Conectando a um servidor LINUX<br>
-A entrada no arquivo HOSTS.SAM é a mesma ex: 10.0.0.2 SERVER_LINUX<br>
-#SERVIDOR LINUX Apenas você terá que mudar o path do arquivo GDB. A string é case sensitive o Linux não usa letras de drives para conexão
+A entrada no arquivo HOSTS.SAM ï¿½ a mesma ex: 10.0.0.2 SERVER_LINUX<br>
+#SERVIDOR LINUX Apenas vocï¿½ terï¿½ que mudar o path do arquivo GDB. A string ï¿½ case sensitive o Linux nï¿½o usa letras de drives para conexï¿½o
 ex: SERVER_LINUX:/var/ib_db/guests.gdb<br>
 <hr />
 
-Delete(vS, 2,1); <i>// delete da variável vS, na segunda posição, 1 caractere</i><br />
-Insert("z",vS,1); <i>//insere a letra z no começo da string</i><br>
-Length(vS); <i>Retorna o número de caracteres de uma string</i><br>
+Delete(vS, 2,1); <i>// delete da variï¿½vel vS, na segunda posiï¿½ï¿½o, 1 caractere</i><br />
+Insert("z",vS,1); <i>//insere a letra z no comeï¿½o da string</i><br>
+Length(vS); <i>Retorna o nï¿½mero de caracteres de uma string</i><br>
 Lowercase( 'SORTE' ); <i>// tranformar para 'sorte'</i><br>
 UpperCase( 'sorte' ); <i>// tranformar para 'SORTE'</i><br>
-Pos('a','Pernambuco'); <i>// retorna a posição de uma string dentro de uma outra string. valor 5</i><br>
+Pos('a','Pernambuco'); <i>// retorna a posiï¿½ï¿½o de uma string dentro de uma outra string. valor 5</i><br>
 Str(vN,vS); <i>//Converte um valor inteiro ou real(vN)para uma string(vS)</i><br>
-VAL - Esta rotina extrai o valor numérico ( tipo real ou integer ) de uma String;<br>
-Sua sintaxe é :<br>
+VAL - Esta rotina extrai o valor numï¿½rico ( tipo real ou integer ) de uma String;<br>
+Sua sintaxe ï¿½ :<br>
 Val ( S ; var v ; var Code : integer );<br>
 Observe o exemplo abaixo :<br>
 Var<br>
@@ -1795,12 +1795,12 @@ Begin<br>
 Val ( Edit1.Text, N, C ) ;<br>
 Button1. Top := N ;<br>
 End ;<br>
-// Se a variável C tiver valor diferente de 0 significa que ouve erra na conversção. ( ex : O texto do Edit não é um número intéiro válido )<br>
+// Se a variï¿½vel C tiver valor diferente de 0 significa que ouve erra na conversï¿½ï¿½o. ( ex : O texto do Edit nï¿½o ï¿½ um nï¿½mero intï¿½iro vï¿½lido )<br>
 <br>
 Format<br>
-//Para coloca zeros a esquerda dos números encontrados.
-%5 o valor da variável inteira "VNum"
-// .5d por que são 5 caracteres
+//Para coloca zeros a esquerda dos nï¿½meros encontrados.
+%5 o valor da variï¿½vel inteira "VNum"
+// .5d por que sï¿½o 5 caracteres
 Edit1.text:= Format('%5.5d',[VNum]);
 <br>
 //Colocar zeros a esquerda de um valor inteiro digitado no Edit<br>
@@ -1810,29 +1810,29 @@ Formatando com estilo de moeda
 Edit1.Text := FormatFloat('#,##0.00',vSalario);
 //Formatando uma String
 Edit1.Text := FormatFloat('#,##0.00',StrToFloat(Edit1.Text));
-Obs- (#) Cerquilha, para números obcionais. (,) Ponto para separar milhar. (.) Virgula para separar casas decimais.
+Obs- (#) Cerquilha, para nï¿½meros obcionais. (,) Ponto para separar milhar. (.) Virgula para separar casas decimais.
 <br>
 //A linha abaixo exibe em um label, seu top. Misturando String do Inteiro
-Label1.Caption := Format('O top deste label é %d',[Label1.top]);
-//Lendo uma variável inteira
-Label.Caption := Format ('O número guardado é : %d, [i]);
-// Para exibir o valor Hexadecimal de uma variável integer(i)
+Label1.Caption := Format('O top deste label ï¿½ %d',[Label1.top]);
+//Lendo uma variï¿½vel inteira
+Label.Caption := Format ('O nï¿½mero guardado ï¿½ : %d, [i]);
+// Para exibir o valor Hexadecimal de uma variï¿½vel integer(i)
 Label1.Caption := Format('$%x',[i]);
 //Formatando uma Data:
 dbedit1.text:=formatDateTime('dd/mm/yyyy hh:mm',now);
 <br>
 &Delete - Ex:
-Delete(MyString) // deleta da variável MyString, na segunda posição, um caractere
+Delete(MyString) // deleta da variï¿½vel MyString, na segunda posiï¿½ï¿½o, um caractere
 Insert - Ex:
-Insert ('z',MyString,1) // Insere a letra z no começo da String
+Insert ('z',MyString,1) // Insere a letra z no comeï¿½o da String
 InttoStr - Ex:
-MyString := InttoStr(Shape1.top)<i>//A variável MyString recebe o valor top do componente Shape1</i><br>
+MyString := InttoStr(Shape1.top)<i>//A variï¿½vel MyString recebe o valor top do componente Shape1</i><br>
 
 INPUTBOX<br>
-<i>//Exibe uma caixa de diálogo onde digitamos um valor que será exibido em um label</i><br>
+<i>//Exibe uma caixa de diï¿½logo onde digitamos um valor que serï¿½ exibido em um label</i><br>
 Label1.Caption := InputBox('digite','integer','');<br>
 <br>
-<i>//Sensível à maiúsculas e minúsculas. Veja abaixo dois exemplos.</i><br>
+<i>//Sensï¿½vel ï¿½ maiï¿½sculas e minï¿½sculas. Veja abaixo dois exemplos.</i><br>
 Exemplo1<br>
 procedure TForm1.Button3Click(Sender: TObject);<br>
 var<br>
@@ -1855,7 +1855,7 @@ try<br>
 DMAgenda.tbAgenda.Delete;<br>
 except<br>
 On E:EDBEngineError do<br>
-ShowMessage('Registro em uso por outro USUÁRIO. Exclusão Cancelada';<br>
+ShowMessage('Registro em uso por outro USUï¿½RIO. Exclusï¿½o Cancelada';<br>
 end;<br>
 
 Centralizar um componete<br>
@@ -1866,19 +1866,19 @@ Button1.Left := Form1.ClientWidth div 2 - Button1.Width div 2;<br>
 <br>
 
 <b>Senhas</b><br>
-Colocar senha numa tabela Paradox //...e retirar em tempo de execução:<br>
+Colocar senha numa tabela Paradox //...e retirar em tempo de execuï¿½ï¿½o:<br>
 Session.AddPassword('Senha-Da-Tabela');<br>
 ...<br>
 Session.RemovePassword;<br>
-outra opção...<br>
+outra opï¿½ï¿½o...<br>
 Session.AddPassword('Senha');<br>
 Table1.Active := True;<br>
 // vincule o Table1 ao Session><br>
 <br>
 
 findfield<br>
-Contador : Integer;//colocar em na área var ou uses<br>
-var // no evento onClick do botão OK<br>
+Contador : Integer;//colocar em na ï¿½rea var ou uses<br>
+var // no evento onClick do botï¿½o OK<br>
 s : TstringField; //unit db<br>
 begin
 s:= DataModlule1.Table1.findfield('senha')as TstringField; // procura na coluna senha<br>
@@ -1896,7 +1896,7 @@ formSenha.Close;<br>
 formPrincipal.Enabled := true;<br>
 end;<br>
 <br>
-<b>// Cográfico</b><br>
+<b>// Cogrï¿½fico</b><br>
 Grafic1.Title.Text.Clear<br>
 Grafic1.Title.Text.Add('Alunos por sexo');<br>
 With Series1 do<br>
@@ -1913,24 +1913,24 @@ function DayOfWeek(Data:TDataTime):Integer;<br>
 <i>Data e Hora Atual</i><br>
 Ex.:Label1.Caption:= 'Data e Hora Atual' + DateTimeToStr(Now);<br>
 <br>
-O form - Métodos e Propriedades do Form<br>
-{ para um formulário aparecer sobre outros sempre }<br>
+O form - Mï¿½todos e Propriedades do Form<br>
+{ para um formulï¿½rio aparecer sobre outros sempre }<br>
 Form1.formstyle := fsOntop;<br>
 <i>{texto em um form}</i><br>
 canvas.textout(0,0,'Este texto aparece no form. Top e Left zerados');<br>
-<i>{form Elíptico}</i><br>
+<i>{form Elï¿½ptico}</i><br>
 No evento OnCreate do form, digite:<br>
 var hR : THandle;<br>
 begin<br>
 <br>
-Cria uma form de formato elíptico<br>
-Obs. Também é bom alterar a propriedade BorderStyle para bsNone. O tamanho da elípse é definido pelo tamanho do form.<br>
+Cria uma form de formato elï¿½ptico<br>
+Obs. Tambï¿½m ï¿½ bom alterar a propriedade BorderStyle para bsNone. O tamanho da elï¿½pse ï¿½ definido pelo tamanho do form.<br>
 hR := CreateEllipticRgn (0,0,Width,Height);<br>
 SetWindowRgn (Handle,hR,True);<br>
 end;<br>
 <br>
 Evitar que se tente abrir o mesmo Form, duas vezes<br>
-if form1 = nil then // se o form1 ainda não foi criado...<br>
+if form1 = nil then // se o form1 ainda nï¿½o foi criado...<br>
 ... comandos para criar um form...<br>
 //colocar no evento OnClose:<br>
 form1 := nil;
@@ -1938,13 +1938,13 @@ form1 := nil;
 &WINEXEC<br>
 <i>//Para executar um outro aplicativo apartir do Delphi</i><br>
 If Winexec('c:\windows\calc.exe',sw_shownormal)= 2 then<br>
-  showmessage('Arquivo não encontrado');<br>
+  showmessage('Arquivo nï¿½o encontrado');<br>
 <br>
-<i>//usados no botão fechar dos programas</i><br>
+<i>//usados no botï¿½o fechar dos programas</i><br>
 If (fileexists(PChar(vPathName + 'BackUp.exe'))) then<br>
   Winexec(PChar(vPathName + 'BackUp.exe'),SW_SHOWNORMAL);<br>
 <br>
-<i>//Para executar um página da Web</i><br>
+<i>//Para executar um pï¿½gina da Web</i><br>
 Winexec ( 'start c:\windows\index.html',sw_ShowMinimized )<br>
 
 <p>Usando o Repeat</p>
@@ -1952,15 +1952,15 @@ var<br>
 N : String;<br>
 begin<br>
 Repeat;<br>
-N := Inputbox('GetNumber', 'Insira um número','');<br>
+N := Inputbox('GetNumber', 'Insira um nï¿½mero','');<br>
 Until N:= '7';<br>
 end;<br>
-Atribuir Mesmo Valor para Vários Edits em um Form<br>
+Atribuir Mesmo Valor para Vï¿½rios Edits em um Form<br>
 for i := 0 to ComponentCount - 1 do<br>
 if Components[i] is TEdit then<br>
 TEdit(Components[i]).Text := Valor;<br>
 <br>
-Testa se há disco no Drive A:<br>
+Testa se hï¿½ disco no Drive A:<br>
 function TForm1.TemDiscoNoDrive(const drive : char): boolean;<br>
 var<br>
 DriveNumero : byte;<br>
@@ -1983,23 +1983,23 @@ procedure TForm1.Button1Click(Sender: TObject);<br>
 begin<br>
 if TemDiscoNoDrive('a') then<br>
 ShowMessage('Tem disco no drive A:')<br>
-else ShowMessage('Não tem disco no drive A:');<br>
+else ShowMessage('Nï¿½o tem disco no drive A:');<br>
 end;<br>
 <br><br>
 Close em um Form<br>
-OnCloseQuery //No evento OnCloseQuery. A segunda opção ("Não") recebe o foco.<br>
-CanClose := Application.MessageBox( 'Confirme Operação','Terminar Aplicação ?',<br>
+OnCloseQuery //No evento OnCloseQuery. A segunda opï¿½ï¿½o ("Nï¿½o") recebe o foco.<br>
+CanClose := Application.MessageBox( 'Confirme Operaï¿½ï¿½o','Terminar Aplicaï¿½ï¿½o ?',<br>
 MB_ICONQUESTION + MB_YESNO + MB_DEFBUTTON2 ) = ID_YES;<br>
 <br>
 Salvar dados antes de fechar:<br>
 //no evento OnClose:<br>
 if Table1.Modified then<br>
-if Application.MessageBox('Gravar alterações?','Dados Alterado',MB_ICONQUESTION + MB_YESNO) = IDYES then<br>
+if Application.MessageBox('Gravar alteraï¿½ï¿½es?','Dados Alterado',MB_ICONQUESTION + MB_YESNO) = IDYES then<br>
 Table1.Post<br>
 else<br>
 Table1.Cancel<br>
 <br>
-Obtendo o número serial do HD<br>
+Obtendo o nï¿½mero serial do HD<br>
 Function SerialNum(FDrive:String) :String;<br>
 Var<br>
 Serial:DWord;<br>
@@ -2015,7 +2015,7 @@ end;<br>
 end;<br>
 
 Criando Tabelas<br>
-Através da função FieldDefs.ADD. Parâmetros: nome do campo, tipo, Tamanho, Chave_Primária.<br>
+Atravï¿½s da funï¿½ï¿½o FieldDefs.ADD. Parï¿½metros: nome do campo, tipo, Tamanho, Chave_Primï¿½ria.<br>
 Procedure Cria_Tabela(Alias,Nome_Tabela:String);<br>
 Begin<br>
 With TTable.Create(Application) do<br>
@@ -2039,14 +2039,14 @@ Cria_Tabela('C:\Temp','Alunos.db');<br>
 end;<br>
 
 LOCALIZAR<br>
-//nesta caixa de diálogo, o campo nome tem que ser o primeiro<br>
-var // uma variárvel tem que ser criada.<br>
+//nesta caixa de diï¿½logo, o campo nome tem que ser o primeiro<br>
+var // uma variï¿½rvel tem que ser criada.<br>
 nome : string;<br>
 Nome : = inputbox( ' Localizar ' , ' digite o nome ' , ' ' ) ;<br>
 if nome <> ' ' then<br>
 begin<br>
 if not table1.findkey ( [ nome ] ) then<br>
-showmessage ( ' nome não encontrado ' ) ;<br>
+showmessage ( ' nome nï¿½o encontrado ' ) ;<br>
 end;<br>
 Simplificando: Table1.findkey([edit1.text])<br>
 <br>
@@ -2059,31 +2059,31 @@ Apenas a linha abaixo :<br>
 Table1.FindKey([Edit1.Text]);<br>
 Apenas a linha abaixo :<br>
 Table1.FindNearest([Edit1.Text]);<br>
-Table1.SetKey; // Primeiro campo é a chave<br>
+Table1.SetKey; // Primeiro campo ï¿½ a chave<br>
 Table1.FieldName('Cidade') := Edit1.Text;<br>
 Table1.GotoKey;<br>
 <br>
-Table1.IndexName := 'NomeCliente'; // procurar em um índice secundário<br>
+Table1.IndexName := 'NomeCliente'; // procurar em um ï¿½ndice secundï¿½rio<br>
 Table1.Open;<br>
 Table1.SetKey;<br>
 table1NomeCliente.AsString := Edit1.Text;<br>
 Table1.GotoNearest;<br>
 .<br>
-// Procurar em um índice primário ou secundário<br>
+// Procurar em um ï¿½ndice primï¿½rio ou secundï¿½rio<br>
 Table1.IndexName := 'Nome'<br>
 Table1.Open;<br>
 Table1.SetKey;<br>
 Table1Nome_Cliente.AsString := Edit1.Text;<br>
 Table1.GotoNearest;<br>
 <br>
-Locate// procura em um índice primário ou secundário<br>
+Locate// procura em um ï¿½ndice primï¿½rio ou secundï¿½rio<br>
 Table1.Locate('Nome',Trim(Edit1.text),[LoPartialKey,loCaseInsensitive]);<br>
 if not DM.Table1.Locate('Vendedor;Data',VarArrayOf([EditVendedor.text, EditData.text]),[loCaseInsensitive]) then<br>
-ShowMessage('O vendedor não realizou venda nesa data');<br>
+ShowMessage('O vendedor nï¿½o realizou venda nesa data');<br>
 <br>
 FindKey<br>
 //Procura um nome em um campo. ( no primeiro campo ).<br>
-// No evento OnClick do Botão Ok, digite<br>
+// No evento OnClick do Botï¿½o Ok, digite<br>
 begin<br>
 if not DataModule.tsenha.FindKey ( [ editNome.text ] ) then<br>
 beguin<br>
@@ -2091,7 +2091,7 @@ ShowMessage ( ' senha desconhecida ' );<br>
 Exit;<br>
 end ;<br>
 <br>
-&EXCEPTIONS - Exceções<br>
+&EXCEPTIONS - Exceï¿½ï¿½es<br>
 Access violation<br>
 Decrare a constante:<br>
 const<br>
@@ -2101,22 +2101,22 @@ if (E is EDBEngineError) then<br>
 if (E as EDBEngineError).Error[0].Errorcode = ChaveViolada then<br>
 begin<br>
 Table1.Cancel;<br>
-ShowMessage('este código já existe');<br>
+ShowMessage('este cï¿½digo jï¿½ existe');<br>
 end;<br>
 abort<br>
 <br>
-Outras exceções<br>
+Outras exceï¿½ï¿½es<br>
 if(E is EDBEngineError) then<br>
 with EDBEngineError(E) do<br>
 case Errors[0].ErrorCode of<br>
-DBIERR_KEYVIOL: ShowMessage('Cliente já cadastrado.');<br>
-DBIERR_REQDERR: ShowMessage('Campo obrigatório não preenchido.');<br>
+DBIERR_KEYVIOL: ShowMessage('Cliente jï¿½ cadastrado.');<br>
+DBIERR_REQDERR: ShowMessage('Campo obrigatï¿½rio nï¿½o preenchido.');<br>
 end<br>
 else<br>
 ShowMessage('Erro no banco de dados:' + #13#13 + E.Message);<br>
 Action := daAbort;<br>
 <br>
-<b>construindo gráfico</b><br>
+<b>construindo grï¿½fico</b><br>
 With Series1 do<br>
 Begin<br>
   Add( 40, 'Pencil' , clRed ) ;<br>
@@ -2133,12 +2133,12 @@ Para PARADOX 4.0 (DOS) -> "nx66ppx"<br>
 
 <br>
 %BOOKMARKS<br>
-//guardar uma posição no registro<br>
+//guardar uma posiï¿½ï¿½o no registro<br>
 var<br>
 BM :tBookMark;<br>
 {...}<br>
 // Grava um Registro<br>
-if bm = nil then // se bm está vazio então...<br>
+if bm = nil then // se bm estï¿½ vazio entï¿½o...<br>
 bm := table1.GetBookMark; // marque um<br>
 ou<br>
 if BookMark = nil then<br>
@@ -2146,9 +2146,9 @@ BookMark := Table1.GetBookMark;<br>
 {++}<br>
 <br>
 // ir para o registro guardado<br>
-if BookMark <> nil then // se o BookMark não está vazio...<br>
+if BookMark <> nil then // se o BookMark nï¿½o estï¿½ vazio...<br>
 begin<br>
-table1.GotoBookMark(BookMark) // vá para o marcado<br>
+table1.GotoBookMark(BookMark) // vï¿½ para o marcado<br>
 end;<br>
 ou..<br>
 if BM <> nil then<br>
@@ -2156,8 +2156,8 @@ begin<br>
 BM := table1.GetBookMark(BM);<br>
 <br>
 {++}<br>
-//limpa da memória o registro guardado<br>
-if BookMark <> nil then // se o BookMark não está vazio então faça..<br>
+//limpa da memï¿½ria o registro guardado<br>
+if BookMark <> nil then // se o BookMark nï¿½o estï¿½ vazio entï¿½o faï¿½a..<br>
 begin<br>
 Table1.FreeBookMark (BookMark); // libere o marcado..<br>
 BookMark := nil; // deixe-o vazio<br>
@@ -2177,7 +2177,7 @@ BookMark := nil;<br>
 end;<br>
 <br>
 <b>DBGrid</b><br>
-Maiúsculo ou Minúsculo no DBGrid<br>
+Maiï¿½sculo ou Minï¿½sculo no DBGrid<br>
 <i>//OnKeyPress do DBGrid:</i><br>
 Key := AnsiUpperCase(Key)[1];<i>//ou</i><br>
 Key := AnsiLowerCase(Key)[1];<br>
@@ -2185,7 +2185,7 @@ Key := AnsiLowerCase(Key)[1];<br>
 Cores do DBGRid<br>
 Coloque a propriedade defaultdrawdata do dbgrid em FALSE<br>
 No evento onDrawColumnCell coloque<br>
-If QyTalPrazo.Value > DATE then<i> // condição </i><br>
+If QyTalPrazo.Value > DATE then<i> // condiï¿½ï¿½o </i><br>
 begin<br>
 Dbgrid1.Canvas.Font.Color:= clFuchsia; <i>// coloque aqui a cor desejada</i><br>
 DBGrid1.Canvas.Brush.Color:= clAqua;<br>
@@ -2208,16 +2208,16 @@ S : String; begin<br>
 Case Table1.State of<br>
 dsInactive : S := 'Inativo';<br>
 dsBrownse : S := 'Browse';<br>
-dsEdit : S := 'Edição';<br>
-dsInsert : S := 'Inserção';<br>
+dsEdit : S := 'Ediï¿½ï¿½o';<br>
+dsInsert : S := 'Inserï¿½ï¿½o';<br>
 dsSetKey : S := 'SetKey';<br>
 dsCalcFields : S := 'CalkFields';<br>
 end;<br>
 Label1.Caption := S;<br>
 <br>
-<b>Para digitar só números em um edit</b><br>
+<b>Para digitar sï¿½ nï¿½meros em um edit</b><br>
 if not (Key in['0'..'9',Chr(8)]) then Key:= #0;<i> //evento OnKeyPress</i><br>
-<i>// Obs: Chr(8), para BackSpace e DecimalSeparator, para a vírgula dentro dos colchetes.</i></br>
+<i>// Obs: Chr(8), para BackSpace e DecimalSeparator, para a vï¿½rgula dentro dos colchetes.</i></br>
 <br>
 Alias<br>
 <br>
@@ -2229,12 +2229,12 @@ Inclua em Uses = BDE e BD;<br>
 <br>
 {Criando Alias II}<br>
 vPathName := ExtractFilePath (ParamStr (0));<br>
-{ se o alias não existir... }<br>
+{ se o alias nï¿½o existir... }<br>
 if not Session1.IsAlias('Infocad') then<br>
 begin<br>
 { Adiciona o alias }<br>
 Session1.AddStandardAlias('Infocad', vPathName, 'PARADOX');<br>
-{Salva o arquivo de configuração do BDE }<br>
+{Salva o arquivo de configuraï¿½ï¿½o do BDE }<br>
 Session1.SaveConfigFile;<br>
 end;<br>
 <br>
@@ -2243,8 +2243,8 @@ end;<br>
 session1.ConfigMode:=cmSession;<br>
 Session1.AddStandardAlias('NomedoAlias','C:\Arquivos de Programas\Arquivos comuns\Borland Shared\Data','PARADOX');
 <br>
-Atualizando as informações em ambiente de rede<br>
-Acessando a mesma tabela concorrente com outra estação ou outro objeto Query, Table<br>
+Atualizando as informaï¿½ï¿½es em ambiente de rede<br>
+Acessando a mesma tabela concorrente com outra estaï¿½ï¿½o ou outro objeto Query, Table<br>
 a) Crie procedure para uso no evento OnActive:<br>
 Procedue TTorm1.FormRefresh(Sender: TObject);<br>
 begin<br>
@@ -2252,9 +2252,9 @@ Table1.Refresh;<br>
 ...<br>
 TableN.Refresh;<br>
 end;<br>
-b)No evento OnActive do formulário acrescente a linha:<br>
+b)No evento OnActive do formulï¿½rio acrescente a linha:<br>
 Application.OnActive := FormRefresh;<br>
-c) No evento OnShow do formulário acreste a linha<br>
+c) No evento OnShow do formulï¿½rio acreste a linha<br>
 FormRefresh(Sender);<br>
 d) No evento OnAfterPost de cada objeto TTable acrescente as linhas;<br>
 Table.FlushBuffer;<br>
@@ -2269,9 +2269,9 @@ USES BDE:<br>
 DbiSaveChandges((Dataset as TTable).Handle);<br>
 <br>
 &DBNavigator<br>
-//Para pegar o nome do botão que foi pressionado<br>
+//Para pegar o nome do botï¿½o que foi pressionado<br>
 DBNavigator1.BtnClick(nbNext);<br>
-// pegando o botão clicado<br>
+// pegando o botï¿½o clicado<br>
 if Button in [nbFirst,nbLast,nbPrior,nbNext] then<br>
 DBNavigator.DataSource.DataSet.Refresh;<br>
 <br>
@@ -2307,11 +2307,11 @@ end;<br>
 <br>
 CopyFile, para copiar arquivos<br>
 CopyFile(pchar('c:\conto.txt'),('a:\conto.txt'),false);<br>
-// no final: true=não regrava o arquivo, se false, ele regrava.<br>
+// no final: true=nï¿½o regrava o arquivo, se false, ele regrava.<br>
 <br>
 A Tecla Pressionada<br>
 //No evento OnKeyDown, digite:<br>
-Label1.Caption := Format('O código da tecla é: %d', [Key]);<br>
+Label1.Caption := Format('O cï¿½digo da tecla ï¿½: %d', [Key]);<br>
 <br>
 O componente TMediaPlayer<br>
 Para ouvir um som<br>
@@ -2339,12 +2339,12 @@ RichEdit1.Lines.LoadFromFile('c:\aviso.txt');<br>
 ReachEdit1.Font.Color := clGreen;<br>
 Estilos de Texto<br>
 //testo em negrito<br>
-if CheckNegrito.Checked then //Para o botão Negrito<br>
+if CheckNegrito.Checked then //Para o botï¿½o Negrito<br>
 Memo1.Font.Style := Memo1.Font.Style + [fsBold] // coloca em estilo negrito<br>
 else<br>
 Memo1.Font.Style := Memo1.Font.Style - [fsBold]; // retira o estilo negrito<br>
-//Memo1.Font.Style := Memo1.Font.Style + [fsItalic] // Para o botão Itálicov
-//Memo1.Font.Style := Memo1.Font.Style + [fsUnderline] // Para o botão Sublinhado<br>
+//Memo1.Font.Style := Memo1.Font.Style + [fsItalic] // Para o botï¿½o Itï¿½licov
+//Memo1.Font.Style := Memo1.Font.Style + [fsUnderline] // Para o botï¿½o Sublinhado<br>
 <br>
 //testo em negrito II<br>
 if BoldButton.Down then<br>
@@ -2373,8 +2373,8 @@ panel1.caption := copy(texto,2,length (texto)) + texto[1];<br>
 end;<br>
 <br>
 ColorGrid<br>
-Form1.Color := ColorGrid1.ForegroundColor ; //botão esquerdo do mouse<br>
-Form1.Color := ColorGrid1.BackgroundColor ;// botão direito do mouse<br>
+Form1.Color := ColorGrid1.ForegroundColor ; //botï¿½o esquerdo do mouse<br>
+Form1.Color := ColorGrid1.BackgroundColor ;// botï¿½o direito do mouse<br>
 <br>
 Movendo Arquivos<br>
 var<br>
@@ -2415,7 +2415,7 @@ Arquivos Help<br>
 WinHelp(Form1.handle, 'c:\Ajuda.hlp', HELP_CONTENTES,0);<br>
 <br>
 &Randomize<br>
-//A linha de comando abaixo faz o label exibir aleatóriamente um número de 1 a 100<br>
+//A linha de comando abaixo faz o label exibir aleatï¿½riamente um nï¿½mero de 1 a 100<br>
 Label1.Caption := InttoStr(Random(100));<br>
 <br>
 &Hint<br>
@@ -2424,7 +2424,7 @@ Application.HintColor := clYellow; // define a cor de todos os hints<br>
 Application.HintPause := 200; // define o tempo de espera de um hint<br>
 Edit1.hint := 'Primeira linha' + #13 + 'segunda linha';//Hint com quebra de linha<br>
 <br>
-&Criar um componente em tempo de execução<br>
+&Criar um componente em tempo de execuï¿½ï¿½o<br>
 var<br>
 PictImg1 : TImage;//declarando um TImage<br>
 begin<br>
@@ -2440,7 +2440,7 @@ Cores com RGB<br>
 Form1.Color := Rgb(100, 100, 100);<br>
 <br>
 &Progess Bar<br>
-Criando um ProgressBar em tempo de execução<br>
+Criando um ProgressBar em tempo de execuï¿½ï¿½o<br>
 //Declare a procedure abaixo<br>
 procedure TestProgress(Form: TForm; Count: SmallInt);<br>
 var<br>
@@ -2468,35 +2468,35 @@ form2.show;<br>
 O Componente TCalendar<br>
 Calendar1.PrevYear;//para exibir o ano anterior<br>
 Calendar1.NextYear;//para exibir o proximo ano<br>
-Calendar1.PrevMonth;//para exibir o mês anterior<br>
-Calendar1.NextMonth;//para exibir o próximo mês<br>
+Calendar1.PrevMonth;//para exibir o mï¿½s anterior<br>
+Calendar1.NextMonth;//para exibir o prï¿½ximo mï¿½s<br>
 Calendar1.CalendarDate := CalendarDate - 1;// vai para um dia anterior<br>
 Calendar1.CalendarDate := CalendarDate + 1;// vai para o proximo dia<br>
 <br>
 
-Verificando os dígitoso do ano<br>
+Verificando os dï¿½gitoso do ano<br>
 Function AnoQuatroDigitos: Boolean;<br>
 begin<br><br>
 Result := (Pos('yyyy',SHortDateFormat)>0);<br>
 if Result = True then<br>
-ShowMessage('O ano esta configurado para quatro dígitos.')<br>
+ShowMessage('O ano esta configurado para quatro dï¿½gitos.')<br>
 else
-ShowMessage('O ano não esta configurado para quatro dígitos.');<br>
+ShowMessage('O ano nï¿½o esta configurado para quatro dï¿½gitos.');<br>
 end;<br>
 <br>
 &Trabalhando com Frames<br>
 // No menu File>New, insira um TFrame.<br>
 Declare em { Private declarations }<br>
 FFrame: TFrame;<br>
-// Dois botões usando a mesma variável do frame...<br>
-// botão um..<br>
+// Dois botï¿½es usando a mesma variï¿½vel do frame...<br>
+// botï¿½o um..<br>
 if FFrame <> nil then<br>
 FFrame.Free;<br>
 FFrame := TFrame1.Create(pnlParent);<br>
 FFrame.Align := alClient;<br>
 FFrame.Parent := pnlParent;<br>
 <br>
-// botão dois..<br>
+// botï¿½o dois..<br>
 if FFrame <> nil then<br>
 FFrame.Free;<br>
 FFrame := TFrame2.Create(pnlParent);<br>
@@ -2514,23 +2514,23 @@ BMP.LoadFromFile(OpenPictureDialog1.FileName);<br>
 Table1Graphic.Assign(BMP);<br>
 end;<br>
 <br><br>
-<b>#impressões</b><br>
-O botão minimizar do quickReport.Alterar o arquivo Qrprev.dfm na pasta Lib.:<br>
+<b>#impressï¿½es</b><br>
+O botï¿½o minimizar do quickReport.Alterar o arquivo Qrprev.dfm na pasta Lib.:<br>
 BorderIcons = [biSystemMenu,biMaximize]<br>
 <br>
 <b>TPrinter</b><br>
 //Uses Printers<br>
-BiginDoc = inicia uma impressão<br>
-EndDoc = finaliza uma impressão<br>
-Abrot = interrompe a impressão<br>
-Priting = para saber se esta havendo uma impressão<br>
+BiginDoc = inicia uma impressï¿½o<br>
+EndDoc = finaliza uma impressï¿½o<br>
+Abrot = interrompe a impressï¿½o<br>
+Priting = para saber se esta havendo uma impressï¿½o<br>
 printers = lista as impressoras instaladas<br>
 PrinterIndex = indica a impessora selecionada<br>
 Fonts = lista as fontes da impressora<br>
-Orientation ( em Portrait ou LandScape) = orientação do papel<br>
-PageHeight = Altura da página<br>
-PageWidth = Largura da página<br>
-PageNumber = Número da página atual<br>
+Orientation ( em Portrait ou LandScape) = orientaï¿½ï¿½o do papel<br>
+PageHeight = Altura da pï¿½gina<br>
+PageWidth = Largura da pï¿½gina<br>
+PageNumber = Nï¿½mero da pï¿½gina atual<br>
 exemplo:<br>
 Procedure TForm1.Button1Click(Sender: TObject);<br>
 var Arquivo : TextFile;<br>
@@ -2539,36 +2539,36 @@ AssignFile(Arquivo,'LPT1');<br>
 Rewrite(Arquivo);<br>
 Writeln(Arquivo,'Teste de impressao - Linha 0');<br>
 Writeln(Arquivo,'Teste de impressao - Linha 1');<br>
-Writeln(Arquivo,#27#15+'Teste de Impressão - Linha 2');<br>
+Writeln(Arquivo,#27#15+'Teste de Impressï¿½o - Linha 2');<br>
 Writeln(Arquivo,'Teste de impressao - Linha 3');<br>
-Writeln(Arquivo,#27#18+'Teste de Impressão - Linha 4');<br>
+Writeln(Arquivo,#27#18+'Teste de Impressï¿½o - Linha 4');<br>
 Writeln(Arquivo,'Teste de impressao - Linha 5');<br>
-Writeln(Arquivo,#12); // Ejeta a página<br>
+Writeln(Arquivo,#12); // Ejeta a pï¿½gina<br>
 CloseFile(Arquivo);<br>
 end;<br>
 <br>
 
 <hr />
 Usando o Interbase<br>
-Como colocar sua aplicação em rede com o Interbase x Delphi<br>
-Instale o INTERBASE CLIENT nas estações<br>
+Como colocar sua aplicaï¿½ï¿½o em rede com o Interbase x Delphi<br>
+Instale o INTERBASE CLIENT nas estaï¿½ï¿½es<br>
 <br>
 Usando o IBX:<br>
-Usarei como o nome do servidor onde está instalado o INTERBASE<br>
+Usarei como o nome do servidor onde estï¿½ instalado o INTERBASE<br>
 "SERVER_IB"<br>
-O banco de dados estará instalado no path<br>
+O banco de dados estarï¿½ instalado no path<br>
 "C:\IB_DB\GUESTS.GDB" o caminho c:\ib_db\guests.gdb REFERE-SE A UNIDADE C: DO SERVIDOR.<br>
 <hr />
 
-<h1>Verificar se o programa ja estrá aberto</h1>
-<p><i>Coloque o código abaixo no seu DPR.</i></p>
+<h1>Verificar se o programa ja estrï¿½ aberto</h1>
+<p><i>Coloque o cï¿½digo abaixo no seu DPR.</i></p>
 <pre>
 Program Project1;
 
 uses
   Forms,
   Windows,
-  Dialogs, //não esqueça de declarar esta uses
+  Dialogs, //nï¿½o esqueï¿½a de declarar esta uses
 Unit1 in 'Unit1.pas' {Form1};
 
 {$R *.RES}
@@ -2578,7 +2578,7 @@ begin
   if GetLastError() = ERROR_ALREADY_EXISTS then
   begin
     MessageBeep(MB_ICONERROR);
-    MessageDlg('Este aplicativo já está sendo executado!', mtError, [mbOK], 0);
+    MessageDlg('Este aplicativo jï¿½ estï¿½ sendo executado!', mtError, [mbOK], 0);
     Halt(0);
   end;
 
@@ -2590,16 +2590,16 @@ end.
 </pre>
 <hr />
 
-<h1><a name="config"></a> Configurações no Delphi </h1>
-<p> Mudar os diretórios para o executável e para os arquivos dcu <br>
-Vá no menu Project –> Options <br>
-“Output directory“ = bin <br>
-“Unit output directory“ = dcu </p>
+<h1><a name="config"></a> Configuraï¿½ï¿½es no Delphi </h1>
+<p> Mudar os diretï¿½rios para o executï¿½vel e para os arquivos dcu <br>
+Vï¿½ no menu Project ï¿½> Options <br>
+ï¿½Output directoryï¿½ = bin <br>
+ï¿½Unit output directoryï¿½ = dcu </p>
 
 <h1>Atalhos</h1>
 <p>
 Ctrl + shift + A  = encontrar unites relacionadas ao comp q vc inseriu<br />
-Ctrl + shift + C  = Declare uma procedure ou funcion e ele cria o campo para digitação na unit<br />
+Ctrl + shift + C  = Declare uma procedure ou funcion e ele cria o campo para digitaï¿½ï¿½o na unit<br />
 </p>
 
 <h1><a name="instala"></a> Instalando componentes</h1>
@@ -2609,8 +2609,8 @@ Ctrl + shift + C  = Declare uma procedure ou funcion e ele cria o campo para dig
 <p> Feche qualquer projeto aberto projeto,<br> 
 acesse: 'Component' + 'install component'. <br>
 Na janela que se apresenta, marque: 'Into New Packages', <br>
-clique no botão 'Browse' ao lado da caixa de texto 'Unit File Name' abra o arquivo com extensão *.pas, dê ok <br>
-logo após 'Compile' e 'Install' e o arquivo criará uma aba na barra de componentes com um nome para a sua localização.<br>
+clique no botï¿½o 'Browse' ao lado da caixa de texto 'Unit File Name' abra o arquivo com extensï¿½o *.pas, dï¿½ ok <br>
+logo apï¿½s 'Compile' e 'Install' e o arquivo criarï¿½ uma aba na barra de componentes com um nome para a sua localizaï¿½ï¿½o.<br>
 No final: <br>
 Tools + Options + Linguages + Delphi Option + Library <br />
 Alterar o campo Library Path. (acrescentar o path)  <br />
@@ -2620,9 +2620,9 @@ Alterar o campo Library Path. (acrescentar o path)  <br />
   Feche o projeto aberto.<br>
   component + install component 	<br />
   Na janela, install component	<br />
-- Pego um packaet já existente. Install into an existing package	<br />
+- Pego um packaet jï¿½ existente. Install into an existing package	<br />
 - Abrir o arquivo .pas	<br />
-- Associa ao pacote ja´existente	<br />
+- Associa ao pacote jaï¿½existente	<br />
 - Depois de compilado, vai avisar.	<br />
 Tools + Options + Linguages + Delphi Option + Library	<br />
 Alterar o campo Library Path. (acrescentar o path)	<br />
@@ -2639,8 +2639,8 @@ Ponha o arquivo .dcu gerado e coloque na pasta lib
 <p>Instalar um componente no Delphi 2010</p>
 <p>File --> New Package<br />
 Adicione a Unit nesse pacote e salve o mesmo com o nome que quiser.<br />
-Feche tudo e abra o DPK gerado. Voce tera que ter a opção Project Manager aberta para poder concluir a instalação (View --> Project Manager).<br />
-Nessa tela, ira ter o .bpl, só clicar em build e depois install. Não esqueça de adicionar o caminho na Library Path após isso.<br />
+Feche tudo e abra o DPK gerado. Voce tera que ter a opï¿½ï¿½o Project Manager aberta para poder concluir a instalaï¿½ï¿½o (View --> Project Manager).<br />
+Nessa tela, ira ter o .bpl, sï¿½ clicar em build e depois install. Nï¿½o esqueï¿½a de adicionar o caminho na Library Path apï¿½s isso.<br />
 </p>
 
 <h1>Zeos </h1>
